@@ -5,9 +5,56 @@
 		<title>The Composer</title>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+		<style>
+		body {
+			background-color: #000;
+			color: #888;
+			font-family: Helvetica;
+			line-height: 26px;
+			margin: 0px;
+			overflow: hidden;
+		}
+
+		h1 {
+			color: #fff;
+			margin: 8px;
+		}
+
+		a {
+			color: #48f;
+			text-decoration: none;
+		}
+
+		a:hover {
+			color: #fff;
+		}
+
+		button {
+			color: #000000;
+			border: 0px;
+			background-color: #48f;
+			padding: 5px 15px;
+			font-size: 18px;
+			cursor: pointer;
+		}
+
+		button:hover {
+			background-color: #fff;
+		}
+
+		#container {
+			box-sizing: border-box;
+			height: 100%;
+			left: 0;
+			margin: 0;
+			position: absolute;
+			top: 0;
+			width: 100%;
+		}
+	</style>
 	</head>
 	<body>
-		<div id="webglContent"></div>
+		<div id="container"></div>
 		<script src="js/index.js"></script>
 	</body>
 </html>
