@@ -7,10 +7,12 @@ void main()
 {
 
 	vec3 pointOnSphere = normalize(vWorldPosition.xyz);
+	float f = 1.0;
+	if(pointOnSphere.y > - 0.2){
+		f = sin(pointOnSphere.y * 2.0);
+	}
 
-	float f = sin( pointOnSphere.y * 4.0);
 
-
-	gl_FragColor = vec4(mix(colorBottom, colorTop, f ), 1.0);
+	gl_FragColor = vec4(mix(colorBottom,colorTop, f ), 1.0);
 
 }
