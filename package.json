@@ -9,6 +9,7 @@
   "main": "index.js",
   "dependencies": {
     "three": "0.75.0",
+    "cannon": "0.6.2",
 		"gsap": "^1.18.2"
   },
   "devDependencies": {
