@@ -8,7 +8,7 @@
   },
   "main": "index.js",
   "dependencies": {
-    "three": "0.75.0"
+    "three": "0.76.1"
   },
   "devDependencies": {
     "browserify": "^13.0.0",
