@@ -8,7 +8,7 @@
   },
   "main": "index.js",
   "dependencies": {
-    "three": "0.76.1",
+    "three": "0.77.1",
     "tween.js": "v16.3.4"
   },
   "devDependencies": {
