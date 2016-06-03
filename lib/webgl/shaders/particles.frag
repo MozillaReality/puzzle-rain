@@ -4,7 +4,7 @@
         uniform sampler2D rampSampler;
         uniform sampler2D colorSampler;
         uniform float opacity;
-        
+
         // Incoming variables from vertex shader
         varying vec2 outputTexcoord;
         varying float outputPercentLife;
