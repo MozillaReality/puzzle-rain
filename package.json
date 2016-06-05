@@ -4,7 +4,7 @@
   "description": "A WebVR room-scale experience for HTC Vive",
   "repository": {
     "type": "git",
-    "url": "git+https://aparacuellos@bitbucket.org/aparacuellos/the-composer.git"
+    "url": "git+https://github.com/fernandojsg/the-composer-threejs.git"
   },
   "main": "index.js",
   "dependencies": {
