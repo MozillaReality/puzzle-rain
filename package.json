@@ -8,18 +8,19 @@
   },
   "main": "index.js",
   "dependencies": {
+    "browserify": "^13.0.0",
+    "glslify": "^5.0.2",
     "three": "0.77.1",
-    "tween.js": "v16.3.4"
+    "tween.js": "v16.3.4",
+    "uglify-js": "^2.6.2"
   },
   "devDependencies": {
-    "browserify": "^13.0.0",
-    "budo": "^8.2.2",
-    "glslify": "^5.0.2",
-    "uglify-js": "^2.6.2"
+    "budo": "^8.2.2"
   },
   "scripts": {
     "start": "budo --open lib/index.js:js/index.js --dir app",
-    "build": "browserify lib/index.js | uglifyjs -cm > app/js/index.js"
+    "build": "mkdir -p app/js && browserify lib/index.js | uglifyjs -c warnings=false -m > app/js/index.js",
+    "postinstall": "npm run build"
   },
   "browserify": {
     "transform": [ "glslify" ]

@@ -1,4 +1,5 @@
-node_modules
+*.blend1
 *.log
 .DS_Store
-*.blend1
+app/js/index.js
+node_modules
