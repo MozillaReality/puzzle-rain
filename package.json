@@ -10,7 +10,7 @@
   "dependencies": {
     "browserify": "^13.0.0",
     "glslify": "^5.0.2",
-    "three": "0.77.1",
+    "three": "0.78.0",
     "tween.js": "v16.3.4",
     "uglify-js": "^2.6.2"
   },
