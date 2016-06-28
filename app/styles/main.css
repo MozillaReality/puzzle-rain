@@ -1,7 +1,17 @@
+@font-face{
+  font-family:'FiraSans';
+  src:url('fonts/fira/eot/FiraSans-Thin.eot');
+  src:url('fonts/fira/eot/FiraSans-Thin.eot?#iefix') format('embedded-opentype'),
+      url('fonts/fira/woff/FiraSans-Thin.woff') format('woff'),
+      url('fonts/fira/ttf/FiraSans-Thin.ttf') format('truetype');
+      font-weight:normal;
+      font-style:normal
+}
+
 body {
   background-color: #121114;
   color: #888;
-  font-family: Helvetica;
+  font-family: FiraSans,Helvetica;
   line-height: 26px;
   margin: 0px;
   overflow: hidden;
