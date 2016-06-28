@@ -15,134 +15,38 @@ body {
   line-height: 26px;
   margin: 0px;
   overflow: hidden;
-  font-size: 14px;
 }
 
-a{
-  color: #888;
+#fallback{
+
 }
 
-a:hover{
-  text-decoration: none;
-}
+#fallbackHeader{
 
-#container, #preloader{
-  box-sizing: border-box;
-  height: 100%;
-  left: 0;
-  margin: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-
-#launch{
-  margin: 0;
-	padding: 0;
-	width: 100%;
-	overflow-x: hidden;
-	height: 100%;
-	position: absolute;
-  background: url(../images/bg.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  z-index: 30;
-}
-
-#launchHeader{
-  width: 100%;
 }
 
 #logoTheComposer{
-  margin: 0 auto;;
-  width: 512px;
-  height: 206px;
-  background: url(../images/logoTheComposer.png) 0 0 no-repeat;
-  background-size: 100%;
-  text-indent: -9999px;
+
 }
 
-#launchBody{
-  width: 100%;
+#fallbackBody{
+
 }
 
-#buttons{
-  width: 720px;
-  margin: 0 auto;
+#videoYT{
+
 }
 
-#normal{
-  width: 360px;
-  float: left;
-}
+#fallbackFooter{
 
-#normalButton{
-  width: 280px;
-  height: 64px;
-  cursor: pointer;
-  background: url(../images/initNormal.png) 0 0 no-repeat;
-  background-size: 100%;
-  text-indent: -9999px;
-  margin: 0 auto;
-}
-
-#normalButton:hover{
-  width: 280px;
-  height: 64px;
-  cursor: pointer;
-  background: url(../images/initNormalHover.png) 0 0 no-repeat;
-  background-size: 100%;
-  text-indent: -9999px;
-  margin: 0 auto;
-}
-
-#normalAlert{
-text-align: center;
-}
-
-#spectator{
-  width: 360px;
-  float: left;
-}
-
-#spectatorButton{
-  width: 280px;
-  height: 64px;
-  cursor: pointer;
-  background: url(../images/initSpectator.png) 0 0 no-repeat;
-  background-size: 100%;
-  text-indent: -9999px;
-  margin: 0 auto;
-}
-
-#spectatorButton:hover{
-  width: 280px;
-  height: 64px;
-  cursor: pointer;
-  background: url(../images/initSpectatorHover.png) 0 0 no-repeat;
-  background-size: 100%;
-  text-indent: -9999px;
-  margin: 0 auto;
-}
-
-#spectatorAlert{
-text-align: center;
-}
-
-#launchFooter{
-  position: absolute;
-  width: 100%;
-  bottom: 10px;
 }
 
 #roomAlert{
-  text-align: center;;
+
 }
 
 #readMore{
-text-align: center;;
+
 }
 
 /*Init Preloader styles*/
