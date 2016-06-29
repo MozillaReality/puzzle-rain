@@ -12,41 +12,98 @@ body {
   background-color: #121114;
   color: #888;
   font-family: FiraSans,Helvetica;
-  line-height: 26px;
   margin: 0px;
-  overflow: hidden;
+  font-size: 14px;
+}
+
+a{
+  color: #888;
+  font-weight: bold;
+}
+
+a:hover{
+  text-decoration: none;
 }
 
 #fallback{
 
 }
 
+#forVive{
+  padding-top: 10px;
+  text-align: center;
+  position: absolute;
+  font-size: 12px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+
 #fallbackHeader{
-
+    background:url(../images/fallbackHeader.jpg) no-repeat center center;
+    width:100%;
+    background-size:contain;
+    position:relative;
+    padding-bottom:49.47%;
 }
 
-#logoTheComposer{
-
-}
+#fallbackHeader span {
+          width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      display:block;
+  }
 
 #fallbackBody{
-
+ padding-top: 20px;
 }
 
-#videoYT{
-
+.responsive-container {
+	position: relative;
+	padding-bottom: 47.8%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+  margin: 0 auto;
+}
+.responsive-container,
+	.responsive-container iframe {
+	max-width: 1280px;
+	max-height: 720px;
+}
+.responsive-container iframe {
+	position: absolute;
+	top: 0; left: 0;
+	width: 100%;
+	height: 100%;
 }
 
 #fallbackFooter{
-
+  padding-top: 30px;
+  width: 100%;
+  bottom: 10px;
 }
 
-#roomAlert{
-
+#alert{
+    width: 600px;
+    font-size: 18px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding: 10px;
+    background: rgba(200, 54, 54, 0.5);
 }
 
 #readMore{
-
+  margin: 15px;
+    font-size: 36px;
+    text-align: center;
+    height: 100px;
+}
+#roomAlert{
+  margin: 15px;
+  text-align: center;
 }
 
 /*Init Preloader styles*/
@@ -225,3 +282,28 @@ body {
   animation: none !important;
 }
 /*End Preloader styles*/
+@media (max-width: 700px) {
+  #alert{
+    font-size: 16px;
+      width: 480px;
+  }
+}
+@media (max-width: 500px) {
+  #readMore{
+      font-size: 24px;
+    }
+    #alert{
+      font-size: 14px;
+        width: 320px;
+    }
+}
+
+@media (orientation: landscape) {
+  #fallbackHeader{
+      background:url(../images/fallbackHeaderLandscape.jpg) no-repeat center center;
+      width:100%;
+      background-size:contain;
+      position:relative;
+      padding-bottom:35.39%;
+  }
+}

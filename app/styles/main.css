@@ -20,6 +20,7 @@ body {
 
 a{
   color: #888;
+  font-weight: bold;
 }
 
 a:hover{
@@ -56,7 +57,7 @@ a:hover{
 }
 
 #logoTheComposer{
-  margin: 0 auto;;
+  margin: 0 auto;
   width: 512px;
   height: 206px;
   background: url(../images/logoTheComposer.png) 0 0 no-repeat;
@@ -138,11 +139,11 @@ text-align: center;
 }
 
 #roomAlert{
-  text-align: center;;
+  text-align: center;
 }
 
 #readMore{
-text-align: center;;
+text-align: center;
 }
 
 /*Init Preloader styles*/
