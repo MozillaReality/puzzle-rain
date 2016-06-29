@@ -33,7 +33,7 @@ a:hover{
   padding-top: 10px;
   text-align: center;
   position: absolute;
-  font-size: 12px;
+  font-size: 16px;
   margin: 0 auto;
   left: 0;
   right: 0;
@@ -283,12 +283,18 @@ a:hover{
 }
 /*End Preloader styles*/
 @media (max-width: 700px) {
+  #forVive{
+    font-size: 12px;
+  }
   #alert{
     font-size: 16px;
       width: 480px;
   }
 }
 @media (max-width: 500px) {
+  #forVive{
+    font-size: 12px;
+  }
   #readMore{
       font-size: 24px;
     }
