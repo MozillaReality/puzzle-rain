@@ -26,51 +26,45 @@ a:hover{
 }
 
 #fallback{
-
-}
-
-#forVive{
-  padding-top: 10px;
-  text-align: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  height: 100%;
   position: absolute;
-  font-size: 16px;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
+  background: url(../images/bgFallback.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 #fallbackHeader{
-    background:url(../images/fallbackHeader.jpg) no-repeat center center;
-    width:100%;
-    background-size:contain;
-    position:relative;
-    padding-bottom:49.47%;
+  width: 100%;
 }
 
-#fallbackHeader span {
-          width: 100%;
-      height: 100%;
-      position: absolute;
-      left: 0;
-      display:block;
-  }
+#logoTheComposer{
+  margin: 20px auto;
+  width: 512px;
+  height: 148px;
+  background: url(../images/logoTheComposer.png) 0 0 no-repeat;
+  background-size: 100%;
+  text-indent: -9999px;
+}
 
 #fallbackBody{
- padding-top: 20px;
 }
 
 .responsive-container {
 	position: relative;
-	padding-bottom: 47.8%;
-	padding-top: 30px;
-	height: 0;
+  height: 360px;
 	overflow: hidden;
   margin: 0 auto;
 }
 .responsive-container,
 	.responsive-container iframe {
-	max-width: 1280px;
-	max-height: 720px;
+	max-width: 640px;
+	max-height: 360px;
 }
 .responsive-container iframe {
 	position: absolute;
@@ -80,13 +74,12 @@ a:hover{
 }
 
 #fallbackFooter{
-  padding-top: 30px;
   width: 100%;
   bottom: 10px;
 }
 
 #alert{
-    width: 600px;
+    width: 620px;
     font-size: 18px;
     text-align: center;
     margin: 0 auto;
@@ -99,217 +92,44 @@ a:hover{
   margin: 15px;
     font-size: 36px;
     text-align: center;
-    height: 100px;
 }
 #roomAlert{
   margin: 15px;
   text-align: center;
 }
 
-/*Init Preloader styles*/
-@-webkit-keyframes uil-ring-anim {
-  0% {
-    -ms-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -ms-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes uil-ring-anim {
-  0% {
-    -ms-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -ms-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-@-moz-keyframes uil-ring-anim {
-  0% {
-    -ms-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -ms-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-@-ms-keyframes uil-ring-anim {
-  0% {
-    -ms-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -ms-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-@-moz-keyframes uil-ring-anim {
-  0% {
-    -ms-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -ms-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes uil-ring-anim {
-  0% {
-    -ms-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -ms-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-@-o-keyframes uil-ring-anim {
-  0% {
-    -ms-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -ms-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-@keyframes uil-ring-anim {
-  0% {
-    -ms-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -ms-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-.uil-ring-css {
-  background: none;
-  position: relative;
-  width: 200px;
-  height: 200px;
-}
-.uil-ring-css > div {
-  position: absolute;
-  display: block;
-  width: 160px;
-  height: 160px;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  margin-top: -80px;
-  margin-left: -80px;
-  border-radius: 80px;
-  box-shadow: 0 6px 0 0 rgba(255,255,255,0.1);
-  -ms-animation: uil-ring-anim 1s linear infinite;
-  -moz-animation: uil-ring-anim 1s linear infinite;
-  -webkit-animation: uil-ring-anim 1s linear infinite;
-  -o-animation: uil-ring-anim 1s linear infinite;
-  animation: uil-ring-anim 1s linear infinite;
-}
-
-.hide{
-  display: none;
-
-  -o-transition-property: none !important;
-  -moz-transition-property: none !important;
-  -ms-transition-property: none !important;
-  -webkit-transition-property: none !important;
-  transition-property: none !important;
-
-  -o-transform: none !important;
-  -moz-transform: none !important;
-  -ms-transform: none !important;
-  -webkit-transform: none !important;
-  transform: none !important;
-
-  -webkit-animation: none !important;
-  -moz-animation: none !important;
-  -o-animation: none !important;
-  -ms-animation: none !important;
-  animation: none !important;
-}
 /*End Preloader styles*/
 @media (max-width: 700px) {
-  #forVive{
-    font-size: 12px;
+
+  #logoTheComposer{
+    margin: 10px auto;
+    width: 338px;
+    height: 98px;
+    background: url(../images/logoTheComposer.png) 0 0 no-repeat;
+    background-size: 100%;
+    text-indent: -9999px;
   }
+
   #alert{
     font-size: 16px;
-      width: 480px;
+      width: 100%;
+      padding: 5px 0;
+  }
+
+  .responsive-container {
+    position: relative;
+    padding: 27%;
+    height: 0;
+    overflow: hidden;
+    margin: 0 auto;
   }
 }
 @media (max-width: 500px) {
-  #forVive{
-    font-size: 12px;
-  }
+
   #readMore{
       font-size: 24px;
     }
     #alert{
       font-size: 14px;
-        width: 320px;
     }
-}
-
-@media (orientation: landscape) {
-  #fallbackHeader{
-      background:url(../images/fallbackHeaderLandscape.jpg) no-repeat center center;
-      width:100%;
-      background-size:contain;
-      position:relative;
-      padding-bottom:35.39%;
-  }
 }
