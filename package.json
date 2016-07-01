@@ -1,12 +1,12 @@
 {
   "name": "the-composer",
   "version": "0.1.0",
-  "description": "A WebVR room-scale experience for HTC Vive",
+  "description": "A WebVR room-scale experience for the HTC Vive",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fernandojsg/the-composer-threejs.git"
   },
-  "main": "index.js",
+  "main": "lib/index.js",
   "dependencies": {
     "browserify": "^13.0.0",
     "glslify": "^5.0.2",
@@ -15,15 +15,24 @@
     "uglify-js": "^2.6.2"
   },
   "devDependencies": {
-    "budo": "^8.2.2"
+    "budo": "^8.2.2",
+    "ghpages": "0.0.8"
   },
   "scripts": {
     "start": "budo --open lib/index.js:js/index.js --dir app",
     "build": "mkdir -p app/js && browserify lib/index.js | uglifyjs -c warnings=false -m > app/js/index.js",
-    "postinstall": "npm run build"
+    "postinstall": "npm run build",
+    "ghpages": "ghpages",
+    "predeploy": "npm run build",
+    "deploy": "npm run ghpages -- -p app",
+    "deploy:mozvr": "npm run deploy:mozvr:prod",
+    "deploy:mozvr:prod": "npm run deploy -- -r mozvr/the-composer-threejs",
+    "deploy:mozvr:dev": "npm run deploy -- -r mozvr/the-composer-threejs"
   },
   "browserify": {
-    "transform": [ "glslify" ]
+    "transform": [
+      "glslify"
+    ]
   },
   "authors": [
     "Arturo Paracuellos <arturo@unboring.net>"
