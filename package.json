@@ -10,6 +10,7 @@
   "dependencies": {
     "browserify": "^13.0.0",
     "glslify": "^5.0.2",
+    "mkdirp": "^0.5.1",
     "three": "0.78.0",
     "tween.js": "v16.3.4",
     "uglify-js": "^2.6.2"
@@ -19,11 +20,13 @@
   },
   "scripts": {
     "start": "budo --open lib/index.js:js/index.js --dir app",
-    "build": "mkdir -p app/js && browserify lib/index.js | uglifyjs -c warnings=false -m > app/js/index.js",
+    "build": "mkdirp app/js && browserify lib/index.js | uglifyjs -c warnings=false -m > app/js/index.js",
     "postinstall": "npm run build"
   },
   "browserify": {
-    "transform": [ "glslify" ]
+    "transform": [
+      "glslify"
+    ]
   },
   "authors": [
     "Arturo Paracuellos <arturo@unboring.net>"
