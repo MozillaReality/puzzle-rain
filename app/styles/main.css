@@ -10,7 +10,7 @@
 
 body {
   background-color: #121114;
-  color: #888;
+  color: #ccc;
   font-family: FiraSans,Helvetica;
   line-height: 26px;
   margin: 0px;
@@ -19,7 +19,7 @@ body {
 }
 
 a{
-  color: #888;
+  color: #ccc;
   font-weight: bold;
 }
 
