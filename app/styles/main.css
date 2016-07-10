@@ -75,61 +75,30 @@ a:hover{
   margin: 0 auto;
 }
 
-#normal{
+.buttonContainer{
   width: 360px;
   float: left;
 }
 
-#normalButton{
-  width: 280px;
-  height: 64px;
-  cursor: pointer;
-  background: url(../images/initNormal.png) 0 0 no-repeat;
-  background-size: 100%;
-  text-indent: -9999px;
-  margin: 0 auto;
+.button{
+    width: 280px;
+    height: 64px;
+    background: rgba(255, 255, 255, 0.1);
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 24px;
+    vertical-align: middle;
 }
 
-#normalButton:hover{
-  width: 280px;
-  height: 64px;
-  cursor: pointer;
-  background: url(../images/initNormalHover.png) 0 0 no-repeat;
-  background-size: 100%;
-  text-indent: -9999px;
-  margin: 0 auto;
+.button:hover{
+  background: rgba(255, 255, 255, 0.3);
 }
 
-#normalAlert{
-text-align: center;
-}
-
-#spectator{
-  width: 360px;
-  float: left;
-}
-
-#spectatorButton{
-  width: 280px;
-  height: 64px;
-  cursor: pointer;
-  background: url(../images/initSpectator.png) 0 0 no-repeat;
-  background-size: 100%;
-  text-indent: -9999px;
-  margin: 0 auto;
-}
-
-#spectatorButton:hover{
-  width: 280px;
-  height: 64px;
-  cursor: pointer;
-  background: url(../images/initSpectatorHover.png) 0 0 no-repeat;
-  background-size: 100%;
-  text-indent: -9999px;
-  margin: 0 auto;
-}
-
-#spectatorAlert{
+.buttonAlert{
 text-align: center;
 }
 
@@ -137,9 +106,13 @@ text-align: center;
   position: absolute;
   width: 100%;
   bottom: 10px;
+  font-size: 16px;
 }
 
 #roomAlert{
+  text-align: center;
+}
+#soonAlert{
   text-align: center;
 }
 
@@ -147,6 +120,49 @@ text-align: center;
 text-align: center;
 }
 
+@media (max-width: 720px) {
+  #launch{
+    background: url(../images/bgFallback.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  #logoTheComposer{
+    width: 300px;
+    height: 104px;
+    background: url(../images/logoTheComposerMini.png) 0 0 no-repeat;
+    background-size: 100%;
+    margin: 20px auto;
+    padding-bottom: 40px;
+  }
+  #buttons{
+    width: 320px;
+    margin: 0 auto;
+  }
+
+  .buttonContainer{
+    width: 320px;
+    float: left;
+    padding-bottom: 30px;
+  }
+
+  .buttonAlert{
+    font-size: 11px;
+  }
+
+  #launchFooter{
+    bottom: 5px;
+    font-size: 11px;
+  }
+
+  #roomAlert{
+    height: 20px;
+  }
+  #soonAlert{
+    height: 20px;
+  }
+}
 /*Init Preloader styles*/
 @-webkit-keyframes uil-ring-anim {
   0% {
