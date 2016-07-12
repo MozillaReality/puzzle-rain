@@ -40,16 +40,28 @@ a:hover{
 }
 
 #fallbackHeader{
-  width: 100%;
+  width: 378px;
+  height: 126px;
+  margin: 0 auto;
+  padding: 30px;
 }
 
-#logoTheComposer{
-  margin: 20px auto;
-  width: 512px;
-  height: 148px;
-  background: url(../images/logoTheComposer.png) 0 0 no-repeat;
+#logoTheComposer {
+  width: 378px;
+  height: 90px;
+  background: url(../images/logoTheComposerOnly.png) no-repeat;
   background-size: 100%;
   text-indent: -9999px;
+}
+
+#logoMozillaVR a{
+  width: 168px;
+  height: 36px;
+  background: url(../images/logoMozillaVR.png) no-repeat;
+  background-size: 100%;
+  text-indent: -9999px;
+  float: right;
+  cursor: pointer;
 }
 
 #fallbackBody{
@@ -73,14 +85,15 @@ a:hover{
 	height: 100%;
 }
 
-#fallbackFooter{
-  width: 100%;
+#fallbackFooter {
+  position: absolute;
   bottom: 10px;
+  width: 100%;
 }
 
 #alert{
     width: 620px;
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
     margin: 0 auto;
     margin-bottom: 30px;
@@ -90,8 +103,8 @@ a:hover{
 
 #readMore{
   margin: 15px;
-    font-size: 36px;
-    text-align: center;
+  font-size: 36px;
+  text-align: center;
 }
 #roomAlert{
   text-align: center;
@@ -102,23 +115,81 @@ a:hover{
 }
 
 /*End Preloader styles*/
-@media (max-width: 700px) {
+/*@media  {
+  #fallbackHeader {
+    width: 300px;
+    height: 100px;
+    margin: 0 auto;
+    padding: 10px 0 5px;
+  }
 
-  #logoTheComposer{
-    margin: 10px auto;
-    width: 338px;
-    height: 98px;
-    background: url(../images/logoTheComposer.png) 0 0 no-repeat;
+  #logoTheComposer {
+    width: 300px;
+    height: 71px;
+    background: url(../images/logoTheComposerOnly.png) no-repeat;
     background-size: 100%;
     text-indent: -9999px;
   }
 
-  #alert{
-    font-size: 16px;
-      width: 100%;
-      padding: 5px 0;
+  #logoMozillaVR a{
+    width: 133px;
+    height: 29px;
+    background: url(../images/logoMozillaVR.png) no-repeat;
+    background-size: 100%;
+    text-indent: -9999px;
+    float: right;
+    cursor: pointer;
   }
 
+  #alert{
+    margin-bottom: 5px;
+  }
+}*/
+@media (max-height: 760px), (max-width: 640px) {
+  #fallbackHeader {
+    width: 300px;
+    height: 100px;
+    margin: 0 auto;
+    padding: 10px 0 20px;
+  }
+
+  #logoTheComposer {
+    width: 300px;
+    height: 71px;
+    background: url(../images/logoTheComposerOnly.png) no-repeat;
+    background-size: 100%;
+    text-indent: -9999px;
+  }
+
+  #logoMozillaVR a{
+    width: 133px;
+    height: 29px;
+    background: url(../images/logoMozillaVR.png) no-repeat;
+    background-size: 100%;
+    text-indent: -9999px;
+    float: right;
+    cursor: pointer;
+  }
+  #alert{
+    font-size: 14px;
+      width: auto;
+      padding: 5px;
+  }
+  #readMore{
+    margin: 10px;
+    font-size: 24px;
+  }
+
+  #fallbackFooter{
+    font-size: 12px;
+    bottom:5px;
+  }
+  #soonAlert{
+    margin: 5px;
+  }
+}
+
+@media (max-width: 640px) {
   .responsive-container {
     position: relative;
     padding: 27%;
@@ -127,12 +198,9 @@ a:hover{
     margin: 0 auto;
   }
 }
-@media (max-width: 500px) {
 
-  #readMore{
-      font-size: 24px;
-    }
-    #alert{
-      font-size: 14px;
-    }
+@media (max-height: 490px), (min-width: 640px) and (max-height: 640px){
+  #fallbackFooter{
+    display: none;
+  }
 }
