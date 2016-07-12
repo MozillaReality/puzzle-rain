@@ -1,4 +1,4 @@
-@font-face{
+@font-face {
   font-family:'FiraSans';
   src:url('fonts/fira/eot/FiraSans-Thin.eot');
   src:url('fonts/fira/eot/FiraSans-Thin.eot?#iefix') format('embedded-opentype'),
@@ -16,16 +16,16 @@ body {
   font-size: 14px;
 }
 
-a{
+a {
   color: #ccc;
   font-weight: bold;
 }
 
-a:hover{
+a:hover {
   text-decoration: none;
 }
 
-#fallback{
+#fallback {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -39,7 +39,7 @@ a:hover{
   background-size: cover;
 }
 
-#fallbackHeader{
+#fallbackHeader {
   width: 378px;
   height: 126px;
   margin: 0 auto;
@@ -54,7 +54,7 @@ a:hover{
   text-indent: -9999px;
 }
 
-#logoMozillaVR a{
+#logoMozillaVR a {
   width: 168px;
   height: 36px;
   background: url(../images/logoMozillaVR.png) no-repeat;
@@ -62,9 +62,6 @@ a:hover{
   text-indent: -9999px;
   float: right;
   cursor: pointer;
-}
-
-#fallbackBody{
 }
 
 .responsive-container {
@@ -91,7 +88,7 @@ a:hover{
   width: 100%;
 }
 
-#alert{
+#alert {
     width: 620px;
     font-size: 16px;
     text-align: center;
@@ -101,50 +98,21 @@ a:hover{
     background: rgba(200, 54, 54, 0.5);
 }
 
-#readMore{
+#readMore {
   margin: 15px;
   font-size: 36px;
   text-align: center;
 }
-#roomAlert{
+
+#roomAlert {
   text-align: center;
 }
-#soonAlert{
+
+#soonAlert {
   margin: 15px;
   text-align: center;
 }
 
-/*End Preloader styles*/
-/*@media  {
-  #fallbackHeader {
-    width: 300px;
-    height: 100px;
-    margin: 0 auto;
-    padding: 10px 0 5px;
-  }
-
-  #logoTheComposer {
-    width: 300px;
-    height: 71px;
-    background: url(../images/logoTheComposerOnly.png) no-repeat;
-    background-size: 100%;
-    text-indent: -9999px;
-  }
-
-  #logoMozillaVR a{
-    width: 133px;
-    height: 29px;
-    background: url(../images/logoMozillaVR.png) no-repeat;
-    background-size: 100%;
-    text-indent: -9999px;
-    float: right;
-    cursor: pointer;
-  }
-
-  #alert{
-    margin-bottom: 5px;
-  }
-}*/
 @media (max-height: 760px), (max-width: 640px) {
   #fallbackHeader {
     width: 300px;
@@ -161,7 +129,7 @@ a:hover{
     text-indent: -9999px;
   }
 
-  #logoMozillaVR a{
+  #logoMozillaVR a {
     width: 133px;
     height: 29px;
     background: url(../images/logoMozillaVR.png) no-repeat;
@@ -170,21 +138,24 @@ a:hover{
     float: right;
     cursor: pointer;
   }
-  #alert{
+
+  #alert {
     font-size: 14px;
       width: auto;
       padding: 5px;
   }
-  #readMore{
+
+  #readMore {
     margin: 10px;
     font-size: 24px;
   }
 
-  #fallbackFooter{
+  #fallbackFooter {
     font-size: 12px;
     bottom:5px;
   }
-  #soonAlert{
+
+  #soonAlert {
     margin: 5px;
   }
 }
@@ -199,8 +170,8 @@ a:hover{
   }
 }
 
-@media (max-height: 490px), (min-width: 640px) and (max-height: 640px){
-  #fallbackFooter{
+@media (max-height: 490px), (min-width: 640px) and (max-height: 640px) {
+  #fallbackFooter {
     display: none;
   }
 }

@@ -1,4 +1,4 @@
-@font-face{
+@font-face {
   font-family:'FiraSans';
   src:url('fonts/fira/eot/FiraSans-Thin.eot');
   src:url('fonts/fira/eot/FiraSans-Thin.eot?#iefix') format('embedded-opentype'),
@@ -18,16 +18,16 @@ body {
   font-size: 14px;
 }
 
-a{
+a {
   color: #ccc;
   font-weight: bold;
 }
 
-a:hover{
+a:hover {
   text-decoration: none;
 }
 
-#container, #preloader{
+#container, #preloader {
   box-sizing: border-box;
   height: 100%;
   left: 0;
@@ -65,7 +65,7 @@ a:hover{
   text-indent: -9999px;
 }
 
-#logoMozillaVR a{
+#logoMozillaVR a {
   width: 168px;
   height: 36px;
   background: url(../images/logoMozillaVR.png) no-repeat;
@@ -80,7 +80,7 @@ a:hover{
   clear: both;
 }
 
-#buttons{
+#buttons {
   width: 640px;
   margin: 0 auto;
 }
@@ -142,14 +142,14 @@ button {
   font-size: 16px;
 }
 
-#roomAlert{
+#roomAlert {
   text-align: center;
 }
-#soonAlert{
+#soonAlert {
   text-align: center;
 }
 
-#readMore{
+#readMore {
 text-align: center;
 }
 
@@ -178,7 +178,7 @@ text-align: center;
     text-indent: -9999px;
   }
 
-  #logoMozillaVR a{
+  #logoMozillaVR a {
     width: 133px;
     height: 29px;
     background: url(../images/logoMozillaVR.png) no-repeat;
@@ -188,7 +188,7 @@ text-align: center;
     cursor: pointer;
   }
 
-  #buttons{
+  #buttons {
     width: 300px;
     margin: 0 auto;
   }
@@ -203,15 +203,15 @@ text-align: center;
   }
 
 
-  #launchFooter{
+  #launchFooter {
     bottom: 5px;
     font-size: 11px;
   }
 
-  #roomAlert{
+  #roomAlert {
     height: 20px;
   }
-  #soonAlert{
+  #soonAlert {
     height: 20px;
   }
 }
@@ -369,7 +369,7 @@ text-align: center;
   animation: uil-ring-anim 1s linear infinite;
 }
 
-.hide{
+.hide {
   display: none;
 
   -o-transition-property: none !important;
