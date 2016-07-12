@@ -68,7 +68,7 @@ a:hover{
 }
 
 #buttons{
-  width: 720px;
+  width: 640px;
   margin: 0 auto;
 }
 
@@ -161,6 +161,9 @@ text-align: center;
     margin: 0 auto;
   }
 
+  .buttonContainer + .buttonContainer {
+    margin-left: 0px;
+  }
   .buttonContainer{
     width: 320px;
     float: left;
