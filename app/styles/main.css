@@ -37,36 +37,33 @@ a:hover{
   width: 100%;
 }
 
-#launch{
+#launch {
+  height: 100%;
+  overflow-x: hidden;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+  background: url(../images/bg.png) no-repeat 50% fixed;
+  background-size: cover;
   display: none;
   margin: 0;
-	padding: 0;
-	width: 100%;
-	overflow-x: hidden;
-	height: 100%;
-	position: absolute;
-  background: url(../images/bg.png) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
   z-index: 30;
 }
 
-#launchHeader{
+#launchHeader {
   width: 100%;
 }
 
-#logoTheComposer{
+#logoTheComposer {
   margin: 30px auto;
   width: 512px;
   height: 148px;
-  background: url(../images/logoTheComposer.png) 0 0 no-repeat;
+  background: url(../images/logoTheComposer.png) no-repeat;
   background-size: 100%;
   text-indent: -9999px;
 }
 
-#launchBody{
+#launchBody {
   width: 100%;
 }
 
@@ -75,34 +72,57 @@ a:hover{
   margin: 0 auto;
 }
 
-.buttonContainer{
-  width: 360px;
-  float: left;
+.buttonContainer {
+  display: inline-block;
+  width: 300px;
+  text-align: center;
 }
 
-.button{
-    width: 280px;
-    height: 64px;
-    background: rgba(255, 255, 255, 0.1);
-    border-style: solid;
-    border-width: 5px;
-    border-color: rgba(255, 255, 255, 0.3);
-    cursor: pointer;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 24px;
-    line-height: 64px;
+.buttonContainer + .buttonContainer {
+  margin-left: 30px;
 }
 
-.button:hover{
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.launch__body .button {
+  background: none;
+  border: 0;
+  display: block;
+  padding: 10px;
+}
+
+.button__inner {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255,255,255,0.25);
+  box-shadow: 0 0 0 4px hsla(0, 0%, 50%, 0.15);
+  color: #ccc;
+  display: inline-block;
+  font-size: 24px;
+  height: 64px;
+  line-height: 64px;
+  position: relative;
+  top: -10px;
+  left: -10px;
+  margin: 10px 10px 0;
+  min-width: 280px;
+  text-align: center;
+}
+
+.button:hover .button__inner {
   background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 0 4px hsla(0, 0%, 50%, 0.3), 0 0 0 5px hsla(0, 0%, 90%, 0.05), inset 0 0 0 4px rgba(255, 255, 255, 0.15);
+  border-color: rgba(255,255,255,0.5);
+  color: #fff;
 }
 
-.buttonAlert{
-text-align: center;
+.buttonAlert {
+  text-align: center;
 }
 
-#launchFooter{
+#launchFooter {
   position: absolute;
   width: 100%;
   bottom: 10px;
