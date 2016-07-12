@@ -91,6 +91,11 @@ a:hover {
   text-align: center;
 }
 
+.buttonContainer img {
+  width: 290px;
+  border: 1px solid rgba(255,255,255,0.25);
+}
+
 .buttonContainer + .buttonContainer {
   margin-left: 30px;
 }
@@ -191,6 +196,10 @@ text-align: center;
   #buttons {
     width: 300px;
     margin: 0 auto;
+  }
+
+  .buttonContainer img {
+    display: none;
   }
 
   .buttonContainer + .buttonContainer {
