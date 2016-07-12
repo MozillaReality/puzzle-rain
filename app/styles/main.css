@@ -51,20 +51,33 @@ a:hover{
 }
 
 #launchHeader {
-  width: 100%;
+  width: 378px;
+  height: 126px;
+  margin: 0 auto;
+  padding: 30px;
 }
 
 #logoTheComposer {
-  margin: 30px auto;
-  width: 512px;
-  height: 148px;
-  background: url(../images/logoTheComposer.png) no-repeat;
+  width: 378px;
+  height: 90px;
+  background: url(../images/logoTheComposerOnly.png) no-repeat;
   background-size: 100%;
   text-indent: -9999px;
 }
 
+#logoMozillaVR a{
+  width: 168px;
+  height: 36px;
+  background: url(../images/logoMozillaVR.png) no-repeat;
+  background-size: 100%;
+  text-indent: -9999px;
+  float: right;
+  cursor: pointer;
+}
+
 #launchBody {
   width: 100%;
+  clear: both;
 }
 
 #buttons{
@@ -148,16 +161,35 @@ text-align: center;
     -o-background-size: cover;
     background-size: cover;
   }
-  #logoTheComposer{
+
+  #launchHeader {
     width: 300px;
-    height: 104px;
-    background: url(../images/logoTheComposerMini.png) 0 0 no-repeat;
-    background-size: 100%;
-    margin: 20px auto;
+    height: 100px;
+    margin: 0 auto;
+    padding: 20px;
     padding-bottom: 40px;
   }
+
+  #logoTheComposer {
+    width: 300px;
+    height: 71px;
+    background: url(../images/logoTheComposerOnly.png) no-repeat;
+    background-size: 100%;
+    text-indent: -9999px;
+  }
+
+  #logoMozillaVR a{
+    width: 133px;
+    height: 29px;
+    background: url(../images/logoMozillaVR.png) no-repeat;
+    background-size: 100%;
+    text-indent: -9999px;
+    float: right;
+    cursor: pointer;
+  }
+
   #buttons{
-    width: 320px;
+    width: 300px;
     margin: 0 auto;
   }
 
@@ -165,14 +197,11 @@ text-align: center;
     margin-left: 0px;
   }
   .buttonContainer{
-    width: 320px;
+    width: 300px;
     float: left;
     padding-bottom: 30px;
   }
 
-  .buttonAlert{
-    font-size: 11px;
-  }
 
   #launchFooter{
     bottom: 5px;
