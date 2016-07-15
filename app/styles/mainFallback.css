@@ -40,16 +40,16 @@ a:hover {
 }
 
 #fallbackHeader {
-  width: 378px;
-  height: 126px;
+  width: 500px;
+  height: 116px;
   margin: 0 auto;
   padding: 30px;
 }
 
-#logoTheComposer {
-  width: 378px;
-  height: 90px;
-  background: url(../images/logoTheComposerOnly.png) no-repeat;
+#logoExperience {
+  width: 500px;
+  height: 80px;
+  background: url(../images/logoExperienceOnly.png) no-repeat;
   background-size: 100%;
   text-indent: -9999px;
 }
@@ -116,15 +116,16 @@ a:hover {
 @media (max-height: 760px), (max-width: 640px) {
   #fallbackHeader {
     width: 300px;
-    height: 100px;
+    height: 77px;
     margin: 0 auto;
-    padding: 10px 0 20px;
+    padding: 20px;
+    padding-bottom: 40px;
   }
 
-  #logoTheComposer {
+  #logoExperience {
     width: 300px;
-    height: 71px;
-    background: url(../images/logoTheComposerOnly.png) no-repeat;
+    height: 48px;
+    background: url(../images/logoExperienceOnly.png) no-repeat;
     background-size: 100%;
     text-indent: -9999px;
   }

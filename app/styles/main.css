@@ -51,16 +51,16 @@ a:hover {
 }
 
 #launchHeader {
-  width: 378px;
-  height: 126px;
+  width: 500px;
+  height: 116px;
   margin: 0 auto;
   padding: 30px;
 }
 
-#logoTheComposer {
-  width: 378px;
-  height: 90px;
-  background: url(../images/logoTheComposerOnly.png) no-repeat;
+#logoExperience {
+  width: 500px;
+  height: 80px;
+  background: url(../images/logoExperienceOnly.png) no-repeat;
   background-size: 100%;
   text-indent: -9999px;
 }
@@ -158,6 +158,12 @@ button {
 text-align: center;
 }
 
+/*@media (max-height: 670px) {
+  #launchFooter {
+    display: none;
+  }
+}*/
+
 @media (max-width: 720px) {
   #launch{
     background: url(../images/bgFallback.jpg) no-repeat center center fixed;
@@ -169,16 +175,16 @@ text-align: center;
 
   #launchHeader {
     width: 300px;
-    height: 100px;
+    height: 77px;
     margin: 0 auto;
     padding: 20px;
     padding-bottom: 40px;
   }
 
-  #logoTheComposer {
+  #logoExperience {
     width: 300px;
-    height: 71px;
-    background: url(../images/logoTheComposerOnly.png) no-repeat;
+    height: 48px;
+    background: url(../images/logoExperienceOnly.png) no-repeat;
     background-size: 100%;
     text-indent: -9999px;
   }
