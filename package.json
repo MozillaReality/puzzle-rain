@@ -12,6 +12,7 @@
     "glslify": "^5.0.2",
     "mkdirp": "^0.5.1",
     "three": "0.78.0",
+    "cannon": "0.6.2",
     "tween.js": "v16.3.4",
     "uglify-js": "^2.6.2"
   },
