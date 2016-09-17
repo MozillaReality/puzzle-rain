@@ -406,3 +406,16 @@ text-align: center;
   animation: none !important;
 }
 /*End Preloader styles*/
+
+#enterVR {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  top: 50%;
+  left: 50%;
+  display: none;
+  font-size: 24px;
+  border-color: rgba(255,255,255,0.5);
+  cursor: pointer;
+  z-index: 100;
+}
