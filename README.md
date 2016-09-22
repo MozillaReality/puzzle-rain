@@ -1,4 +1,4 @@
-# The Composer
+# Puzzle Rain
 A WebVR room-scale experience for HTC Vive
 
 ## Configuration
