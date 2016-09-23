@@ -15,4 +15,5 @@ npm run build
 ```
 
 ## License
-MIT
+
+This program is free software and is distributed under an [MIT License](LICENSE.md).
