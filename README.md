@@ -1,13 +1,18 @@
 # Puzzle Rain
-A WebVR room-scale experience for HTC Vive
 
-## Configuration
+An interactive [WebVR](https://webvr.info/) room-scale experience for the [HTC Vive](https://www.vive.com/).
+
+
+## Local Development
 
 ```sh
-# Install node_modules
+# Clone this repo.
+git clone git@github.com:mozvr/puzzle-rain.git && cd puzzle-rain
+
+# Install the Node dependencies.
 npm install
 
-# Run project at [http://localhost:9966/](http://localhost:9966/)
+# Run the project at [http://localhost:9966/](http://localhost:9966/).
 npm run start
 
 # Build project

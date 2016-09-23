@@ -1,10 +1,10 @@
 {
-  "name": "the-composer",
-  "version": "0.1.0",
+  "name": "puzzle-rain",
+  "version": "1.0.0",
   "description": "A WebVR room-scale experience for HTC Vive",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fernandojsg/the-composer-threejs.git"
+    "url": "git+https://github.com/mozvr/puzzle-rain.git"
   },
   "main": "index.js",
   "dependencies": {
