@@ -1,0 +1,178 @@
+@font-face {
+  font-family:'FiraSans';
+  src:url('fonts/fira/eot/FiraSans-Thin.eot');
+  src:url('fonts/fira/eot/FiraSans-Thin.eot?#iefix') format('embedded-opentype'),
+      url('fonts/fira/woff/FiraSans-Thin.woff') format('woff'),
+      url('fonts/fira/ttf/FiraSans-Thin.ttf') format('truetype');
+      font-weight:normal;
+      font-style:normal
+}
+
+body {
+  background-color: #121114;
+  color: #ccc;
+  font-family: FiraSans,Helvetica;
+  margin: 0px;
+  font-size: 14px;
+}
+
+a {
+  color: #ccc;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+#fallback {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  height: 100%;
+  position: absolute;
+  background: url(../images/bgFallback.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#fallbackHeader {
+  width: 500px;
+  height: 116px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+#logoExperience {
+  width: 500px;
+  height: 80px;
+  background: url(../images/logoExperienceOnly.png) no-repeat;
+  background-size: 100%;
+  text-indent: -9999px;
+}
+
+#logoMozillaVR a {
+  width: 168px;
+  height: 36px;
+  background: url(../images/logoMozillaVR.png) no-repeat;
+  background-size: 100%;
+  text-indent: -9999px;
+  float: right;
+  cursor: pointer;
+}
+
+.responsive-container {
+	position: relative;
+  height: 360px;
+	overflow: hidden;
+  margin: 0 auto;
+}
+.responsive-container,
+	.responsive-container iframe {
+	max-width: 640px;
+	max-height: 360px;
+}
+.responsive-container iframe {
+	position: absolute;
+	top: 0; left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#fallbackFooter {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
+
+#alert {
+    width: 620px;
+    font-size: 16px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding: 10px;
+    background: rgba(200, 54, 54, 0.5);
+}
+
+#readMore {
+  margin: 15px;
+  font-size: 36px;
+  text-align: center;
+}
+
+#roomAlert {
+  text-align: center;
+}
+
+#soonAlert {
+  margin: 15px;
+  text-align: center;
+}
+
+@media (max-height: 760px), (max-width: 640px) {
+  #fallbackHeader {
+    width: 300px;
+    height: 77px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-bottom: 40px;
+  }
+
+  #logoExperience {
+    width: 300px;
+    height: 48px;
+    background: url(../images/logoExperienceOnly.png) no-repeat;
+    background-size: 100%;
+    text-indent: -9999px;
+  }
+
+  #logoMozillaVR a {
+    width: 133px;
+    height: 29px;
+    background: url(../images/logoMozillaVR.png) no-repeat;
+    background-size: 100%;
+    text-indent: -9999px;
+    float: right;
+    cursor: pointer;
+  }
+
+  #alert {
+    font-size: 14px;
+      width: auto;
+      padding: 5px;
+  }
+
+  #readMore {
+    margin: 10px;
+    font-size: 24px;
+  }
+
+  #fallbackFooter {
+    font-size: 12px;
+    bottom:5px;
+  }
+
+  #soonAlert {
+    margin: 5px;
+  }
+}
+
+@media (max-width: 640px) {
+  .responsive-container {
+    position: relative;
+    padding: 27%;
+    height: 0;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+}
+
+@media (max-height: 490px), (min-width: 640px) and (max-height: 640px) {
+  #fallbackFooter {
+    display: none;
+  }
+}

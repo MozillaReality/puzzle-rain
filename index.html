@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Puzzle Rain by Mozilla VR - A WebVR room-scale experience for HTC Vive, Oculus Rift &amp; Daydream</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <div id="launch">
+    <div id="launchHeader">
+      <div id="logoExperience">
+        Puzzle Rain
+      </div>
+      <div id="logoMozillaVR">
+        <a href="http://mozvr.com" target="_blank">by Mozilla VR</a>
+      </div>
+    </div>
+    <div id="launchBody" class="launch__body">
+      <div id="buttons">
+        <div class="buttonContainer">
+          <img src="images/normalThumb.gif"/>
+          <button class="button" id="normalButton"><span class="button__inner">Normal mode</span></button>
+           <div class="buttonAlert">(Recommended for <a href="https://www.oculus.com/en-us/blog/powering-the-rift/" target="_blank">minimum spec. PCs</a>)</div>
+        </div>
+        <div class="buttonContainer">
+          <img src="images/spectatorThumb.gif"/>
+          <button class="button" id="spectatorButton"><span class="button__inner">Spectator mode</span></button>
+          <div class="buttonAlert">(Recommended for powerful PCs)</div>
+        </div>
+      </div>
+    </div>
+    <div id="launchFooter">
+      <div id="roomAlert">
+        Puzzle Rain by <a href="https://mozvr.com/" target="_blank">Mozilla VR</a> is a WebVR experience for the HTC Vive.
+      </div>
+      <!-- <div id="soonAlert">
+        (Soon for Oculus Rift+Touch controllers &amp; Google Daydream.)
+      </div> -->
+      <div id="readMore">
+        Read about <a href="https://blog.mozvr.com/puzzle-rain/" target="_blank">how was made</a>.
+      </div>
+    </div>
+  </div>
+  <div id="preloader" class='uil-ring-css' style='transform:scale(0.96);'><div></div></div>
+  <div id="enterVR" class='enterVR'>ENTER VR</div>
+  <div id="container"></div>
+  <script src="js/index.js"></script>
+</body>
+</html>

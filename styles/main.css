@@ -1,0 +1,421 @@
+@font-face {
+  font-family:'FiraSans';
+  src:url('fonts/fira/eot/FiraSans-Thin.eot');
+  src:url('fonts/fira/eot/FiraSans-Thin.eot?#iefix') format('embedded-opentype'),
+      url('fonts/fira/woff/FiraSans-Thin.woff') format('woff'),
+      url('fonts/fira/ttf/FiraSans-Thin.ttf') format('truetype');
+      font-weight:normal;
+      font-style:normal
+}
+
+body {
+  background-color: #121114;
+  color: #ccc;
+  font-family: FiraSans,Helvetica;
+  line-height: 26px;
+  margin: 0px;
+  overflow: hidden;
+  font-size: 14px;
+}
+
+a {
+  color: #ccc;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+#container, #preloader {
+  box-sizing: border-box;
+  height: 100%;
+  left: 0;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+#launch {
+  height: 100%;
+  overflow-x: hidden;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+  background: url(../images/bg.jpg) no-repeat 50% fixed;
+  background-size: cover;
+  display: none;
+  margin: 0;
+  z-index: 30;
+}
+
+#launchHeader {
+  width: 500px;
+  height: 116px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+#logoExperience {
+  width: 500px;
+  height: 80px;
+  background: url(../images/logoExperienceOnly.png) no-repeat;
+  background-size: 100%;
+  text-indent: -9999px;
+}
+
+#logoMozillaVR a {
+  width: 168px;
+  height: 36px;
+  background: url(../images/logoMozillaVR.png) no-repeat;
+  background-size: 100%;
+  text-indent: -9999px;
+  float: right;
+  cursor: pointer;
+}
+
+#launchBody {
+  width: 100%;
+  clear: both;
+}
+
+#buttons {
+  width: 640px;
+  margin: 0 auto;
+}
+
+.buttonContainer {
+  display: inline-block;
+  width: 300px;
+  text-align: center;
+}
+
+.buttonContainer img {
+  width: 290px;
+  border: 1px solid rgba(255,255,255,0.25);
+}
+
+.buttonContainer + .buttonContainer {
+  margin-left: 30px;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.launch__body .button {
+  background: none;
+  border: 0;
+  display: block;
+  padding: 10px;
+}
+
+.button__inner {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255,255,255,0.25);
+  box-shadow: 0 0 0 4px hsla(0, 0%, 50%, 0.15);
+  color: #ccc;
+  display: inline-block;
+  font-size: 24px;
+  height: 64px;
+  line-height: 64px;
+  position: relative;
+  top: -10px;
+  left: -10px;
+  margin: 10px 10px 0;
+  min-width: 280px;
+  text-align: center;
+}
+
+.button:hover .button__inner {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 0 4px hsla(0, 0%, 50%, 0.3), 0 0 0 5px hsla(0, 0%, 90%, 0.05), inset 0 0 0 4px rgba(255, 255, 255, 0.15);
+  border-color: rgba(255,255,255,0.5);
+  color: #fff;
+}
+
+.buttonAlert {
+  text-align: center;
+}
+
+#launchFooter {
+  position: absolute;
+  width: 100%;
+  bottom: 10px;
+  font-size: 16px;
+}
+
+#roomAlert {
+  text-align: center;
+}
+#soonAlert {
+  text-align: center;
+}
+
+#readMore {
+text-align: center;
+}
+
+/*@media (max-height: 670px) {
+  #launchFooter {
+    display: none;
+  }
+}*/
+
+@media (max-width: 720px) {
+  #launch{
+    background: url(../images/bgFallback.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  #launchHeader {
+    width: 300px;
+    height: 77px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-bottom: 40px;
+  }
+
+  #logoExperience {
+    width: 300px;
+    height: 48px;
+    background: url(../images/logoExperienceOnly.png) no-repeat;
+    background-size: 100%;
+    text-indent: -9999px;
+  }
+
+  #logoMozillaVR a {
+    width: 133px;
+    height: 29px;
+    background: url(../images/logoMozillaVR.png) no-repeat;
+    background-size: 100%;
+    text-indent: -9999px;
+    float: right;
+    cursor: pointer;
+  }
+
+  #buttons {
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .buttonContainer img {
+    display: none;
+  }
+
+  .buttonContainer + .buttonContainer {
+    margin-left: 0px;
+  }
+  .buttonContainer{
+    width: 300px;
+    float: left;
+    padding-bottom: 30px;
+  }
+
+
+  #launchFooter {
+    bottom: 5px;
+    font-size: 11px;
+  }
+
+  #roomAlert {
+    height: 20px;
+  }
+  #soonAlert {
+    height: 20px;
+  }
+}
+/*Init Preloader styles*/
+@-webkit-keyframes uil-ring-anim {
+  0% {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes uil-ring-anim {
+  0% {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes uil-ring-anim {
+  0% {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-ms-keyframes uil-ring-anim {
+  0% {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes uil-ring-anim {
+  0% {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes uil-ring-anim {
+  0% {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes uil-ring-anim {
+  0% {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes uil-ring-anim {
+  0% {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.uil-ring-css {
+  background: none;
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+.uil-ring-css > div {
+  position: absolute;
+  display: block;
+  width: 160px;
+  height: 160px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -80px;
+  margin-left: -80px;
+  border-radius: 80px;
+  box-shadow: 0 6px 0 0 rgba(255,255,255,0.1);
+  -ms-animation: uil-ring-anim 1s linear infinite;
+  -moz-animation: uil-ring-anim 1s linear infinite;
+  -webkit-animation: uil-ring-anim 1s linear infinite;
+  -o-animation: uil-ring-anim 1s linear infinite;
+  animation: uil-ring-anim 1s linear infinite;
+}
+
+.hide {
+  display: none;
+
+  -o-transition-property: none !important;
+  -moz-transition-property: none !important;
+  -ms-transition-property: none !important;
+  -webkit-transition-property: none !important;
+  transition-property: none !important;
+
+  -o-transform: none !important;
+  -moz-transform: none !important;
+  -ms-transform: none !important;
+  -webkit-transform: none !important;
+  transform: none !important;
+
+  -webkit-animation: none !important;
+  -moz-animation: none !important;
+  -o-animation: none !important;
+  -ms-animation: none !important;
+  animation: none !important;
+}
+/*End Preloader styles*/
+
+#enterVR {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  top: 50%;
+  left: 50%;
+  display: none;
+  font-size: 24px;
+  border-color: rgba(255,255,255,0.5);
+  cursor: pointer;
+  z-index: 100;
+}
