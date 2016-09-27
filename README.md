@@ -2,6 +2,7 @@
 
 An interactive [WebVR](https://webvr.info/) room-scale experience for the [HTC Vive](https://www.vive.com/).
 
+[**Play _Puzzle Rain_ now!** `https://mozvr.com/puzzle-rain/`<br><br><img src="https://cloud.githubusercontent.com/assets/203725/18859336/f330d662-8427-11e6-9f14-4520f12f5cc6.png" alt="Puzzle Rain poster" title="Puzzle Rain poster" width="100%">](https://mozvr.com/puzzle-rain/)
 
 ## Local Development
 
