@@ -20,6 +20,20 @@ npm run start
 npm run build
 ```
 
+## Deployment
+
+To deploy to production (https://mozvr.com/puzzle-rain/):
+
+```sh
+npm run deploy:mozvr
+```
+
+To deploy to some other repo (https://cvan.github.io/puzzle-rain/):
+
+```sh
+npm run deploy -- -r cvan/puzzle-rain
+```
+
 ## License
 
 This program is free software and is distributed under an [MIT License](LICENSE.md).
