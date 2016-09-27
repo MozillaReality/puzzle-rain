@@ -11,7 +11,7 @@
     "browserify": "^13.0.0",
     "glslify": "^5.0.2",
     "mkdirp": "^0.5.1",
-    "three": "0.81.0",
+    "three": "0.81.2",
     "tween.js": "v16.3.4",
     "uglify-js": "^2.6.2"
   },
