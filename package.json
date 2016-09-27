@@ -6,7 +6,7 @@
     "type": "git",
     "url": "git+https://github.com/mozvr/puzzle-rain.git"
   },
-  "main": "index.js",
+  "main": "lib/index.js",
   "dependencies": {
     "browserify": "^13.0.0",
     "glslify": "^5.0.2",
@@ -16,12 +16,16 @@
     "uglify-js": "^2.6.2"
   },
   "devDependencies": {
-    "budo": "^8.2.2"
+    "budo": "^8.2.2",
+    "ghpages": "0.0.8"
   },
   "scripts": {
     "start": "budo --open lib/index.js:js/index.js --dir app --live --cors",
     "build": "mkdirp app/js && browserify lib/index.js | uglifyjs -c warnings=false -m > app/js/index.js",
-    "postinstall": "npm run build"
+    "postinstall": "npm run build",
+    "ghpages": "ghpages",
+    "predeploy": "npm run build",
+    "deploy": "npm run ghpages -- -p app"
   },
   "browserify": {
     "transform": [
