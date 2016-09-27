@@ -19,7 +19,7 @@
     "budo": "^8.2.2"
   },
   "scripts": {
-    "start": "budo --open lib/index.js:js/index.js --dir app",
+    "start": "budo --open lib/index.js:js/index.js --dir app --live --cors",
     "build": "mkdirp app/js && browserify lib/index.js | uglifyjs -c warnings=false -m > app/js/index.js",
     "postinstall": "npm run build"
   },
