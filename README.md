@@ -1,4 +1,4 @@
-# Puzzle Rain
+# _Puzzle Rain_
 
 A room-scale [WebVR](https://webvr.info/) puzzle game for the [HTC Vive](https://www.vive.com/).
 
