@@ -25,7 +25,7 @@ npm run build
 To deploy to production (https://mozvr.com/puzzle-rain/):
 
 ```sh
-npm run deploy:mozvr
+npm run deploy
 ```
 
 To deploy to some other repo (https://cvan.github.io/puzzle-rain/):
