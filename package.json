@@ -36,7 +36,8 @@
     ]
   },
   "authors": [
-    "Arturo Paracuellos <arturo@unboring.net>"
+    "Arturo Paracuellos <arturo@unboring.net>",
+    "Chris Van Wiemeersch <hearcomstreble@gmail.com>"
   ],
   "license": "MIT"
 }
