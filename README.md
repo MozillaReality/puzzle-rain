@@ -34,6 +34,14 @@ To deploy to some other repo (https://cvan.github.io/puzzle-rain/):
 npm run deploy -- -r cvan/puzzle-rain
 ```
 
+### Performance measurements
+
+To run Google PageSpeed insights on [production](https://mozvr.com/puzzle-rain/), run [`psi`](https://github.com/addyosmani/psi):
+
+```sh
+npm run perf
+```
+
 ## License
 
 This program is free software and is distributed under an [MIT License](LICENSE.md).

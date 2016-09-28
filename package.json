@@ -17,7 +17,8 @@
   },
   "devDependencies": {
     "budo": "^8.2.2",
-    "ghpages": "0.0.8"
+    "ghpages": "0.0.8",
+    "psi": "^2.0.4"
   },
   "scripts": {
     "start": "budo --open lib/index.js:js/index.js --dir app --live --cors",
@@ -25,7 +26,9 @@
     "postinstall": "npm run build",
     "ghpages": "ghpages",
     "predeploy": "npm run build",
-    "deploy": "npm run ghpages -- -p app"
+    "deploy": "npm run ghpages -- -p app",
+    "psi": "psi https://mozvr.com/puzzle-rain/ --strategy=desktop > logs/perf/$(date + \"%Y.%m.%d.%S\").txt",
+    "perf": "npm run psi"
   },
   "browserify": {
     "transform": [
