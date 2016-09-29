@@ -36,7 +36,7 @@ npm run deploy -- -r cvan/puzzle-rain
 
 ### Performance measurements
 
-To run Google PageSpeed insights on [production](https://mozvr.com/puzzle-rain/), run [`psi`](https://github.com/addyosmani/psi):
+To run Google PageSpeed insights on [production](https://mozvr.com/puzzle-rain/) (using [`psi`](https://github.com/addyosmani/psi)):
 
 ```sh
 npm run perf
