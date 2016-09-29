@@ -9,6 +9,7 @@
   "main": "lib/index.js",
   "dependencies": {
     "browserify": "^13.0.0",
+    "ghpages": "^0.0.8",
     "glslify": "^5.0.2",
     "mkdirp": "^0.5.1",
     "three": "0.81.2",
@@ -21,8 +22,9 @@
     "psi": "^2.0.4"
   },
   "scripts": {
-    "start": "budo --open lib/index.js:js/index.js --dir app --live --cors",
-    "build": "mkdirp app/js && browserify lib/index.js | uglifyjs -c warnings=false -m > app/js/index.js",
+    "start": "budo lib/index.js:js/index.js --dir app --live --cors",
+    "build": "npm run build:css && npm run build:js",
+    "build:js": "mkdirp app/js && browserify lib/index.js | uglifyjs -c warnings=false -m > app/js/index.js",
     "postinstall": "npm run build",
     "ghpages": "ghpages",
     "predeploy": "npm run build",
