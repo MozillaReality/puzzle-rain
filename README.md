@@ -13,10 +13,10 @@ git clone git@github.com:mozvr/puzzle-rain.git && cd puzzle-rain
 # Install the Node dependencies.
 npm install
 
-# Run the project at [http://localhost:9966/](http://localhost:9966/).
-npm run start
+# Start the local dev server (http://localhost:9966/).
+npm start
 
-# Build project
+# Run the build system (generates Browserify JS bundle).
 npm run build
 ```
 
