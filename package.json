@@ -23,7 +23,7 @@
   },
   "scripts": {
     "start": "budo lib/index.js:js/index.js --dir app --live --cors",
-    "build": "npm run build:css && npm run build:js",
+    "build": "npm run build:js",
     "build:js": "mkdirp app/js && browserify lib/index.js | uglifyjs -c warnings=false -m > app/js/index.js",
     "postinstall": "npm run build",
     "ghpages": "ghpages",
