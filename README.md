@@ -1,6 +1,6 @@
 # _Puzzle Rain_
 
-A room-scale [WebVR](https://webvr.info/) puzzle game for the [HTC Vive](https://www.vive.com/).
+A musical room-scale [WebVR](https://webvr.info/) game for the [HTC Vive](https://www.vive.com/).
 
 [**Play _Puzzle Rain_ now!** `https://mozvr.com/puzzle-rain/`<br><br><img src="https://cloud.githubusercontent.com/assets/203725/18859336/f330d662-8427-11e6-9f14-4520f12f5cc6.png" alt="Puzzle Rain poster" title="Puzzle Rain poster" width="100%">](https://mozvr.com/puzzle-rain/)
 
@@ -28,7 +28,7 @@ To deploy to production (https://mozvr.com/puzzle-rain/):
 npm run deploy
 ```
 
-To deploy to some other repo (https://cvan.github.io/puzzle-rain/):
+To deploy to some other repo (e.g., https://cvan.github.io/puzzle-rain/):
 
 ```sh
 npm run deploy -- -r cvan/puzzle-rain
