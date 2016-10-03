@@ -27,25 +27,25 @@
 <body>
   <div id="launch">
     <div id="launchHeader">
-      <div id="logoExperience">
+      <div id="logoExperience" title="Puzzle Rain">
         Puzzle Rain
       </div>
       <div id="logoMozillaVR">
-        <a href="http://mozvr.com" target="_blank">by Mozilla VR</a>
+        <a href="http://mozvr.com" title="by Mozilla VR">by Mozilla VR</a>
       </div>
     </div>
     <div id="launchBody" class="launch__body">
       <div id="buttons">
-        <div class="buttonContainer">
-          <img src="images/normalThumb.gif"/>
-          <button class="button" id="normalButton"><span class="button__inner">Normal mode</span></button>
-           <div class="buttonAlert">(Recommended for <a href="https://www.oculus.com/en-us/blog/powering-the-rift/" target="_blank">minimum spec. PCs</a>)</div>
-        </div>
-        <div class="buttonContainer">
-          <img src="images/spectatorThumb.gif"/>
-          <button class="button" id="spectatorButton"><span class="button__inner">Spectator mode</span></button>
+        <a href="?mode=normal" class="buttonContainer button buttonNormal" id="normalButton">
+          <img src="images/normalThumb.gif" alt="Normal mode" title="Normal mode">
+          <span class="button-fake button-splash"><span>Normal mode</span></span>
+          <div class="buttonAlert">(Recommended for minimum spec. PCs)</div>
+        </a>
+        <a href="?mode=spectator" class="buttonContainer button buttonSpectator" id="spectatorButton">
+          <img src="images/spectatorThumb.gif" alt="Spectator mode" title="Spectator mode">
+          <span class="button-fake button-splash"><span>Spectator mode</span></span>
           <div class="buttonAlert">(Recommended for powerful PCs)</div>
-        </div>
+        </a>
       </div>
     </div>
     <div id="launchFooter">

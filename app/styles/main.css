@@ -88,8 +88,10 @@ a:hover {
 
 .buttonContainer {
   display: inline-block;
-  width: 300px;
+  cursor: pointer;
+  margin: 0;
   text-align: center;
+  width: 300px;
 }
 
 .buttonContainer img {
@@ -97,23 +99,33 @@ a:hover {
   width: 290px;
 }
 
+.buttonContainer:hover img {
+  border-color: rgba(255,255,255,.5);
+}
+
 .buttonContainer + .buttonContainer {
   margin-left: 30px;
 }
 
+.button-fake,
 button {
   cursor: pointer;
   font-family: inherit;
 }
 
-.launch__body .button {
+a.buttonContainer,
+a.buttonContainer:hover {
+  text-decoration: none;
+}
+
+.button-splash {
   background: none;
   border: 0;
   display: block;
   padding: 10px;
 }
 
-.button__inner {
+.button-fake > span {
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255,255,255,0.25);
   box-shadow: 0 0 0 4px hsla(0, 0%, 50%, 0.15);
@@ -130,7 +142,7 @@ button {
   text-align: center;
 }
 
-.button:hover .button__inner {
+.button-fake:hover > span {
   background: rgba(255, 255, 255, 0.3);
   box-shadow: 0 0 0 4px hsla(0, 0%, 50%, 0.3), 0 0 0 5px hsla(0, 0%, 90%, 0.05), inset 0 0 0 4px rgba(255, 255, 255, 0.15);
   border-color: rgba(255,255,255,0.5);
