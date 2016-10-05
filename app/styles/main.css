@@ -349,4 +349,8 @@ a:hover .buttonAlert,
   .alert-learn {
     margin: 2rem auto 2.25rem;
   }
+
+  .wrap-copy-footer {
+    max-width: 80%;
+  }
 }
