@@ -9,7 +9,6 @@
   "main": "lib/index.js",
   "dependencies": {
     "browserify": "^13.0.0",
-    "ghpages": "^0.0.8",
     "glslify": "^5.0.2",
     "mkdirp": "^0.5.1",
     "three": "0.81.2",
@@ -18,7 +17,7 @@
   },
   "devDependencies": {
     "budo": "^8.2.2",
-    "ghpages": "0.0.8",
+    "gh-pages": "^0.11.0",
     "lighthouse": "^1.1.4",
     "psi": "^2.0.4"
   },
@@ -27,9 +26,9 @@
     "build": "npm run build:js",
     "build:js": "mkdirp app/js && browserify lib/index.js | uglifyjs -c warnings=false -m > app/js/index.js",
     "postinstall": "npm run build",
-    "ghpages": "ghpages",
+    "ghpages": "gh-pages",
     "predeploy": "npm run build",
-    "deploy": "npm run ghpages -- -p app",
+    "deploy": "npm run ghpages -- -d app",
     "perf:pagespeed:index": "psi https://mozvr.com/puzzle-rain/ --strategy=desktop > logs/perf/pagespeed/pages/index/$(date +\"%Y.%m.%d_%H.%M.%S\").txt",
     "perf:pagespeed:fallback": "psi https://mozvr.com/puzzle-rain/fallback.html --strategy=desktop > logs/perf/pagespeed/pages/fallback/$(date +\"%Y.%m.%d_%H.%M.%S\").txt",
     "perf:pagespeed:normal": "psi https://mozvr.com/puzzle-rain/?mode=normal --strategy=desktop > logs/perf/pagespeed/pages/normal/$(date +\"%Y.%m.%d_%H.%M.%S\").txt",
