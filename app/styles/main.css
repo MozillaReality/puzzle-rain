@@ -9,16 +9,19 @@
 html,
 body {
   height: 100%;
+  width: 100%;
 }
 
 html {
+  background: #121114 url(../images/bg.jpg) 50% 0% fixed no-repeat;
+  background-size: cover;
   font-size: 14px;
+  padding: 2rem 0;
 }
 
 body {
-  background-color: #121114;
   color: #ccc;
-  font: 1rem/1.3 -apple-system, BlinkMacSystemFont,
+  font: 1rem/1.5 -apple-system, BlinkMacSystemFont,
     Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
     Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -38,8 +41,14 @@ a:hover {
   text-decoration: none;
 }
 
-#container,
-#preloader {
+.c:after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.container,
+.preloader {
   height: 100%;
   left: 0;
   margin: 0;
@@ -48,42 +57,39 @@ a:hover {
   width: 100%;
 }
 
-#launch {
-  background: url(../images/bg.jpg) no-repeat 50% fixed;
-  background-size: cover;
+.splash:not(.hidden) ~ .container {
   display: none;
-  height: 100%;
-  margin: 0;
-  overflow-x: hidden;
-  padding: 0;
-  position: absolute;
-  width: 100%;
-  z-index: 30;
 }
 
-#launchHeader {
-  height: 116px;
+.wrap {
   margin: 0 auto;
-  padding: 30px;
-  width: 500px;
+  min-width: 300px;
+  max-width: 600px;
+  padding: 1rem 2rem;
+  position: relative;
+  text-align: center;
+  width: 100%;
 }
 
-#logoExperience {
-  background: url(../images/logoExperienceOnly.png) no-repeat;
-  background-size: 100%;
+.logoExperience {
+  background: url(../images/logoExperienceOnly.png) 50% no-repeat;
+  background-size: contain;
   height: 80px;
   text-indent: -9999px;
-  width: 500px;
 }
 
-#logoMozillaVR a {
-  background: url(../images/logoMozillaVR.png) no-repeat;
-  background-size: 100%;
+.logoMozillaVR a {
+  background: url(../images/logoMozillaVR.png) 50% no-repeat;
+  background-size: contain;
   cursor: pointer;
-  float: right;
+  display: block;
   height: 36px;
   text-indent: -9999px;
-  width: 168px;
+}
+
+.splash {
+  position: relative;
+  z-index: 2;
 }
 
 #launchBody {
@@ -179,45 +185,29 @@ a:hover .buttonAlert,
   opacity: 1;
 }
 
-#launchFooter {
-  bottom: 10px;
-  font-size: 16px;
-  position: absolute;
-  text-align: center;
-  width: 100%;
+.wrap-copy p + p {
+  margin-top: .75rem;
+}
+
+.wrap-copy p a {
+  font-weight: 500;
+}
+
+@media (max-height: 760px), (max-width: 640px) {
+  .wrap-copy {
+    max-width: 500px;
+  }
+
+  .logoExperience {
+    height: 48px;
+  }
+
+  .logoMozillaVR a {
+    height: 29px;
+  }
 }
 
 @media (max-width: 719px) {
-  #launch {
-    background: url(../images/bgFallback.jpg) no-repeat 50% fixed;
-    background-size: cover;
-  }
-
-  #launchHeader {
-    height: 77px;
-    margin: 0 auto;
-    padding: 20px 20px 40px;
-    width: 300px;
-  }
-
-  #logoExperience {
-    background: url(../images/logoExperienceOnly.png) no-repeat;
-    background-size: 100%;
-    height: 48px;
-    text-indent: -9999px;
-    width: 300px;
-  }
-
-  #logoMozillaVR a {
-    background: url(../images/logoMozillaVR.png) no-repeat;
-    background-size: 100%;
-    cursor: pointer;
-    float: right;
-    height: 29px;
-    text-indent: -9999px;
-    width: 133px;
-  }
-
   #buttons {
     margin: 0 auto;
     width: 300px;
@@ -235,16 +225,6 @@ a:hover .buttonAlert,
 
   .buttonContainer img {
     display: none;
-  }
-
-  #launchFooter {
-    bottom: 5px;
-    font-size: 11px;
-  }
-
-  #roomAlert,
-  #soonAlert {
-    height: 20px;
   }
 }
 
@@ -303,7 +283,7 @@ a:hover .buttonAlert,
   text-align: center;
   top: 0;
   width: 100%;
-  z-index: 100;
+  z-index: 1;
 }
 
 .button-enter-vr {
@@ -334,4 +314,32 @@ a:hover .buttonAlert,
 
 .footer p a {
   font-weight: 500;
+}
+
+.alert-learn {
+  background: rgba(54, 200, 54, 0.5);
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.5);
+  color: rgba(255,255,255,.5);
+  font-size: 1rem;
+  line-height: 1.7;
+  margin: 1rem auto 1.25rem;
+}
+
+.alert-learn a {
+  color: rgba(255,255,255,.5);
+}
+
+.alert-learn a:hover {
+  color: rgba(255,255,255,.85);
+}
+
+.alert-learn a.blog-link {
+  color: #fff;
+  font-size: 2rem;
+}
+
+@media (max-width: 639px) {
+  .alert-learn {
+    margin: 2rem auto 2.25rem;
+  }
 }

@@ -13,7 +13,10 @@ body {
 }
 
 html {
+  background-size: cover;
+  background: #121114 url(../images/bgFallback.jpg) 50% 100% fixed no-repeat;
   font-size: 14px;
+  padding: 2rem 0;
 }
 
 body {
@@ -30,12 +33,6 @@ a {
 a:hover {
   color: #eee;
   text-decoration: none;
-}
-
-.fallback-doc {
-  background: url(../images/bgFallback.jpg) 50% 100% fixed no-repeat;
-  background-size: cover;
-  padding: 2rem 0;
 }
 
 .logoExperience {
@@ -105,11 +102,11 @@ a:hover {
   text-align: center;
 }
 
-.footer p + p {
+.wrap-copy p + p {
   margin-top: .75rem;
 }
 
-.footer p a {
+.wrap-copy p a {
   font-weight: 500;
 }
 
@@ -127,18 +124,12 @@ a:hover {
   }
 }
 
-@media (min-height: 690px) {
-  .fallback-footer {
-    display: block;
-  }
-}
-
 @media (max-width: 639px) {
   .alert-learn {
     margin: 2rem auto 2.25rem;
   }
 
-  .alert br {
+  .alert-learn br {
     display: none;
   }
 }

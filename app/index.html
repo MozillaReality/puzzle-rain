@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="splash-doc">
 <head>
   <meta charset="utf-8">
   <title>Puzzle Rain by Mozilla VR - A musical WebVR journey for the HTC Vive</title>
@@ -25,17 +25,28 @@
   <meta name="twitter:image" content="https://mozvr.com/puzzle-rain/images/poster.png">
 </head>
 <body data-page-type="index">
-  <div id="launch">
-    <div id="launchHeader">
-      <div id="logoExperience" title="Puzzle Rain">
-        Puzzle Rain
+  <div class="splash" id="launch">
+    <header class="header splash-header" id="splash-header">
+      <div class="wrap">
+        <div class="logoExperience" id="logoExperience">
+          Puzzle Rain
+        </div>
+        <div class="logoMozillaVR" id="logoMozillaVR">
+          <a href="https://mozvr.com">by Mozilla VR</a>
+        </div>
       </div>
-      <div id="logoMozillaVR">
-        <a href="https://mozvr.com/" title="by Mozilla VR">by Mozilla VR</a>
+      <div class="alert alert-learn" id="alert">
+        <div class="wrap wrap-copy">
+          <p>
+            A musical <a href="https://webvr.info/">WebVR</a> journey for the <a href="https://www.vive.com/">HTC Vive</a>.
+            <br>
+            <a href="https://blog.mozvr.com/puzzle-rain/" class="blog-link">Read our blog post!</a>
+          </p>
+        </div>
       </div>
-    </div>
-    <div id="launchBody" class="launch__body">
-      <div id="buttons" class="mode-options">
+    </header>
+    <div id="launchBody" class="launch-body">
+      <div id="buttons" class="mode-options c">
         <a href="?mode=normal" class="buttonContainer button button-mode-normal" id="button-mode-normal">
           <img class="border-splash" src="images/normalThumb.gif" alt="Normal mode" title="Normal mode">
           <span class="button-fake button-splash"><span class="border-splash">Normal mode</span></span>
@@ -48,20 +59,14 @@
         </a>
       </div>
     </div>
-    <footer id="launchFooter" class="footer splash-footer">
-      <div id="roomAlert" class="wrap">
-        <p>A musical <a href="https://webvr.info/">WebVR</a> journey for the <a href="https://www.vive.com/">HTC Vive</a>.</p>
-        <p>Read our <a href="https://blog.mozvr.com/puzzle-rain/">blog post</a>.</p>
-      </div>
-    </footer>
   </div>
-  <div id="preloader" class="preloader"><div></div></div>
+  <div id="preloader" class="preloader hidden"><div></div></div>
   <div id="enter-vr" class="enter-vr hidden">
     <button class="button button-fake button-splash button-enter-vr">
       <span class="border-splash">Enter VR</span>
     </button>
   </div>
-  <div id="container"></div>
+  <div id="container" class="container"></div>
   <!-- <script src="sw-register.js" async></script> -->
   <script src="js/index.js"></script>
 </body>
