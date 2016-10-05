@@ -29,7 +29,7 @@
     "ghpages": "ghpages",
     "predeploy": "npm run build",
     "deploy": "npm run ghpages -- -p app",
-    "psi": "psi https://mozvr.com/puzzle-rain/ --strategy=desktop > logs/perf/$(date + \"%Y.%m.%d.%S\").txt",
+    "psi": "psi https://mozvr.com/puzzle-rain/ --strategy=desktop > logs/perf/$(date +\"%Y.%m.%d_%H.%M.%S\").txt",
     "perf": "npm run psi"
   },
   "browserify": {
