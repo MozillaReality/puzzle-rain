@@ -18,7 +18,7 @@ html {
 
 body {
   color: #ccc;
-  font: 1rem/1.3 -apple-system, BlinkMacSystemFont,
+  font: 1rem/1.5 -apple-system, BlinkMacSystemFont,
     Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
     Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   position: relative;
@@ -103,10 +103,6 @@ a:hover {
   text-align: center;
 }
 
-.footer {
-  line-height: 1.5;
-}
-
 .footer p + p {
   margin-top: .75rem;
 }
@@ -146,6 +142,10 @@ a:hover {
 }
 
 @media (max-width: 639px) {
+  .alert br {
+    display: none;
+  }
+
   .iframe-video {
     min-height: auto;
     height: 300px;
