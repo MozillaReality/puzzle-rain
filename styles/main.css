@@ -13,10 +13,16 @@ body {
 }
 
 html {
-  background: #121114 url(../images/bg.jpg) 50% 0% fixed no-repeat;
-  background-size: cover;
+  background-color: #121114;
   font-size: 14px;
+  overflow: hidden;
   padding: 2rem 0;
+}
+
+html[data-show-splash="true"] {
+  background: #121114 url(../images/bg.jpg) 50% 0 fixed no-repeat;
+  background-size: cover;
+  overflow: visible;
 }
 
 body {
@@ -57,7 +63,8 @@ a:hover {
   width: 100%;
 }
 
-.splash:not(.hidden) ~ .container {
+html[data-show-splash="true"] .container,
+html[data-show-splash="true"] .preloader {
   display: none;
 }
 
@@ -88,8 +95,13 @@ a:hover {
 }
 
 .splash {
+  display: none;
   position: relative;
   z-index: 2;
+}
+
+html[data-show-splash="true"] .splash {
+  display: block;
 }
 
 #launchBody {
@@ -240,11 +252,10 @@ a:hover .buttonAlert,
 }
 
 .preloader {
-  background: none;
-  height: 200px;
-  position: relative;
-  transform: scale(.96);
-  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
 }
 
 .preloader > div {
@@ -253,11 +264,6 @@ a:hover .buttonAlert,
   box-shadow: 0 6px 0 0 rgba(255,255,255,.1);
   display: block;
   height: 160px;
-  left: 50%;
-  margin-left: -80px;
-  margin-top: -80px;
-  position: fixed;
-  top: 50%;
   width: 160px;
 }
 
@@ -291,7 +297,7 @@ a:hover .buttonAlert,
 }
 
 .button-splash.button-enter-vr .border-splash {
-  padding: 0 1rem;
+  padding: 0 4rem;
 }
 
 .button-splash.button-enter-vr .border-splash {
