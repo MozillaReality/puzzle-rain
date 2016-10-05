@@ -1,0 +1,23 @@
+
+--------------------------------------------------------
+
+URL:       mozvr.com/puzzle-rain/?mode=spectator
+Strategy:  desktop
+Speed:     87
+
+CSS size                                   | 5.26 kB
+HTML size                                  | 3.8 kB
+Image size                                 | 3.06 MB
+JavaScript size                            | 674.53 kB
+CSS resources                              | 1
+Hosts                                      | 2
+JS resources                               | 2
+Resources                                  | 19
+Static resources                           | 6
+Total size of request bytes sent           | 5.77 kB
+
+Leverage browser caching                   | 2.94
+Optimize images                            | 10.3
+
+--------------------------------------------------------
+

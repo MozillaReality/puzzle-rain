@@ -1,0 +1,25 @@
+
+--------------------------------------------------------
+
+URL:       mozvr.com/puzzle-rain/fallback.html
+Strategy:  desktop
+Speed:     85
+
+CSS size                                   | 248.81 kB
+HTML size                                  | 22.57 kB
+Image size                                 | 372.61 kB
+JavaScript size                            | 1.46 MB
+CSS resources                              | 2
+Hosts                                      | 9
+JS resources                               | 5
+Resources                                  | 16
+Static resources                           | 9
+Other size                                 | 38.63 kB
+Total size of request bytes sent           | 2.3 kB
+
+Leverage browser caching                   | 2.46
+Minimize render blocking resources         | 2
+Optimize images                            | 11.66
+
+--------------------------------------------------------
+

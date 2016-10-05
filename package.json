@@ -19,6 +19,7 @@
   "devDependencies": {
     "budo": "^8.2.2",
     "ghpages": "0.0.8",
+    "lighthouse": "^1.1.4",
     "psi": "^2.0.4"
   },
   "scripts": {
@@ -29,8 +30,19 @@
     "ghpages": "ghpages",
     "predeploy": "npm run build",
     "deploy": "npm run ghpages -- -p app",
-    "psi": "psi https://mozvr.com/puzzle-rain/ --strategy=desktop > logs/perf/$(date +\"%Y.%m.%d_%H.%M.%S\").txt",
-    "perf": "npm run psi"
+    "perf:pagespeed:index": "psi https://mozvr.com/puzzle-rain/ --strategy=desktop > logs/perf/pagespeed/pages/index/$(date +\"%Y.%m.%d_%H.%M.%S\").txt",
+    "perf:pagespeed:fallback": "psi https://mozvr.com/puzzle-rain/fallback.html --strategy=desktop > logs/perf/pagespeed/pages/fallback/$(date +\"%Y.%m.%d_%H.%M.%S\").txt",
+    "perf:pagespeed:normal": "psi https://mozvr.com/puzzle-rain/?mode=normal --strategy=desktop > logs/perf/pagespeed/pages/normal/$(date +\"%Y.%m.%d_%H.%M.%S\").txt",
+    "perf:pagespeed:spectator": "psi https://mozvr.com/puzzle-rain/?mode=spectator --strategy=desktop > logs/perf/pagespeed/pages/spectator/$(date +\"%Y.%m.%d_%H.%M.%S\").txt",
+    "perf:pagespeed:debug": "psi https://mozvr.com/puzzle-rain/?mode=debug --strategy=desktop > logs/perf/pagespeed/pages/debug/$(date +\"%Y.%m.%d_%H.%M.%S\").txt",
+    "perf:pagespeed": "npm run perf:pagespeed:index && npm run perf:pagespeed:fallback && npm run perf:pagespeed:normal && npm run perf:pagespeed:spectator && npm run perf:pagespeed:debug",
+    "perf:lighthouse:index": "lighthouse https://mozvr.com/puzzle-rain/ --perf --output=html --output-path=logs/perf/lighthouse/pages/index/$(date +\"%Y.%m.%d_%H.%M.%S\").html",
+    "perf:lighthouse:fallback": "lighthouse https://mozvr.com/puzzle-rain/fallback.html --perf --output=html --output-path=logs/perf/lighthouse/pages/fallback/$(date +\"%Y.%m.%d_%H.%M.%S\").html",
+    "perf:lighthouse:normal": "lighthouse https://mozvr.com/puzzle-rain/?mode=normal --perf --output=html --output-path=logs/perf/lighthouse/pages/normal/$(date +\"%Y.%m.%d_%H.%M.%S\").html",
+    "perf:lighthouse:spectator": "lighthouse https://mozvr.com/puzzle-rain/?mode=spectator --perf --output=html --output-path=logs/perf/lighthouse/pages/spectator/$(date +\"%Y.%m.%d_%H.%M.%S\").html",
+    "perf:lighthouse:debug": "lighthouse https://mozvr.com/puzzle-rain/?mode=debug --perf --output=html --output-path=logs/perf/lighthouse/pages/debug/$(date +\"%Y.%m.%d_%H.%M.%S\").html",
+    "perf:lighthouse": "npm run perf:lighthouse:index && npm run perf:lighthouse:fallback && npm run perf:lighthouse:normal && npm run perf:lighthouse:spectator && npm run perf:lighthouse:debug",
+    "perf": "npm run perf:pagespeed && npm run perf:lighthouse"
   },
   "browserify": {
     "transform": [
