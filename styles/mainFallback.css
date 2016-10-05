@@ -21,7 +21,6 @@ body {
   font: 1rem/1.5 -apple-system, BlinkMacSystemFont,
     Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
     Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  position: relative;
 }
 
 a {
@@ -36,7 +35,7 @@ a:hover {
 .fallback-doc {
   background: url(../images/bgFallback.jpg) 50% 100% fixed no-repeat;
   background-size: cover;
-  padding: 2vw 0;
+  padding: 2rem 0;
 }
 
 .logoExperience {
@@ -62,17 +61,19 @@ a:hover {
   width: 100%;
 }
 
-.iframe-video {
-  min-height: 300px;
-  margin: 0 auto;
-  height: 400px;
-  max-height: 700px;
-  max-width: 72vw;
+.iframe-video-container {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;  /* 16:9 */
+  position: relative;
 }
 
-.video .wrap {
-  position: relative;
-  min-height: 200px;
+.iframe-video {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 .fallback-footer {
@@ -85,14 +86,15 @@ a:hover {
   background: rgba(200, 54, 54, 0.5);
   box-shadow: 0 2px 2px 0 rgba(0,0,0,.5);
   font-size: 1rem;
-  margin: 1rem auto;
+  margin: 1rem auto 1.25rem;
 }
 
 .wrap {
   margin: 0 auto;
   min-width: 300px;
-  max-width: 730px;
-  padding: 10px;
+  max-width: 600px;
+  padding: 1rem 2rem;
+  position: relative;
   text-align: center;
   width: 100%;
 }
@@ -112,26 +114,16 @@ a:hover {
 }
 
 @media (max-height: 760px), (max-width: 640px) {
+  .wrap-copy {
+    max-width: 500px;
+  }
+
   .logoExperience {
     height: 48px;
   }
 
   .logoMozillaVR a {
     height: 29px;
-  }
-
-  .readMore {
-    font-size: 24px;
-    margin: 10px;
-  }
-
-  .fallback-footer {
-    bottom: 5px;
-    font-size: 12px;
-  }
-
-  #soonAlert {
-    margin: 5px;
   }
 }
 
@@ -142,13 +134,11 @@ a:hover {
 }
 
 @media (max-width: 639px) {
-  .alert br {
-    display: none;
+  .alert-learn {
+    margin: 2rem auto 2.25rem;
   }
 
-  .iframe-video {
-    min-height: auto;
-    height: 300px;
-    max-width: 90%;
+  .alert br {
+    display: none;
   }
 }
