@@ -51,10 +51,9 @@ a:hover {
   width: 100%;
 }
 
-#launch {
+.splash {
   background: url(../images/bg.jpg) no-repeat 50% fixed;
   background-size: cover;
-  display: none;
   height: 100%;
   margin: 0;
   overflow-x: hidden;
@@ -182,15 +181,9 @@ a:hover .buttonAlert {
   text-align: center;
 }
 
-/*@media (max-height: 670px) {
-  #launchFooter {
-    display: none;
-  }
-}*/
-
 @media (max-width: 719px) {
-  #launch {
-    background: url(../images/bgFallback.jpg) no-repeat 50% fixed;
+  .splash {
+    background-image: url(../images/bgFallback.jpg);
     background-size: cover;
   }
 
@@ -203,19 +196,13 @@ a:hover .buttonAlert {
 
   #logoExperience {
     background: url(../images/logoExperienceOnly.png) no-repeat;
-    background-size: 100%;
     height: 48px;
-    text-indent: -9999px;
     width: 300px;
   }
 
   #logoMozillaVR a {
     background: url(../images/logoMozillaVR.png) no-repeat;
-    background-size: 100%;
-    cursor: pointer;
-    float: right;
     height: 29px;
-    text-indent: -9999px;
     width: 133px;
   }
 
@@ -250,38 +237,40 @@ a:hover .buttonAlert {
 }
 
 /* Begin preloader styles. */
-@keyframes uil-ring-anim {
+@keyframes preloader-anim {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
 }
 
-.uil-ring-css {
+.preloader {
   background: none;
   height: 200px;
   position: relative;
   width: 200px;
 }
-.uil-ring-css > div {
-  animation: uil-ring-anim 1s linear infinite;
+
+.preloader > div {
+  animation: preloader-anim 1s linear infinite;
   border-radius: 80px;
-  box-shadow: 0 6px 0 0 rgba(255,255,255,0.1);
+  box-shadow: 0 6px 0 0 rgba(255,255,255,.1);
   display: block;
   height: 160px;
   left: 50%;
   margin-left: -80px;
   margin-top: -80px;
-  position: absolute;
   position: fixed;
   top: 50%;
   width: 160px;
 }
-.hide {
+
+.hidden {
   animation: none !important;
-  display: none;
+  display: none !important;
   transform: none !important;
   transition-property: none !important;
 }
@@ -290,7 +279,6 @@ a:hover .buttonAlert {
 .enter-vr {
   border-color: rgba(255,255,255,.5);
   cursor: pointer;
-  display: none;
   font-size: 24px;
   height: 160px;
   left: 50%;
