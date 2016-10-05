@@ -13,7 +13,8 @@
     "mkdirp": "^0.5.1",
     "three": "0.81.2",
     "tween.js": "v16.3.4",
-    "uglify-js": "^2.6.2"
+    "uglify-js": "^2.6.2",
+    "vanilla-router": "^1.1.3"
   },
   "devDependencies": {
     "budo": "^8.2.2",

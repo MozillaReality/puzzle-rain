@@ -1,5 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html
+  data-title-splash="Puzzle Rain by Mozilla VR - A WebVR room-scale experience for the HTC Vive"
+  data-title-default="Puzzle Rain"
+  data-title-mode-normal="Puzzle Rain"
+  data-title-mode-spectator="Puzzle Rain (Spectator Mode)"
+  >
 <head>
   <meta charset="utf-8">
   <title>Puzzle Rain by Mozilla VR - A WebVR room-scale experience for the HTC Vive</title>
@@ -25,13 +30,13 @@
   <meta name="twitter:image" content="https://mozvr.com/puzzle-rain/images/poster.png">
 </head>
 <body>
-  <div id="launch">
+  <div class="splash hidden" id="splash">
     <div id="launchHeader">
       <div id="logoExperience" title="Puzzle Rain">
         Puzzle Rain
       </div>
       <div id="logoMozillaVR">
-        <a href="http://mozvr.com" title="by Mozilla VR">by Mozilla VR</a>
+        <a href="https://mozvr.com/" title="by Mozilla VR">by Mozilla VR</a>
       </div>
     </div>
     <div id="launchBody" class="launch__body">
@@ -60,8 +65,8 @@
       </div>
     </div>
   </div>
-  <div id="preloader" class='uil-ring-css' style='transform:scale(0.96);'><div></div></div>
-  <div id="enter-vr" class="enter-vr">Enter VR</div>
+  <div id="preloader" class="preloader hidden"><div></div></div>
+  <div id="enter-vr" class="enter-vr hidden">Enter VR</div>
   <div id="container"></div>
   <script src="sw-register.js" async></script>
   <script src="js/index.js"></script>
