@@ -2,7 +2,11 @@
 
 _Puzzle Rain_ is a musical journey in which you help awaken and guide mythical creatures back together into happy musical harmony with one another. Only their combined musical chorus can summon life-giving rain to revive the parched and desolate landscape. Though, there isn’t much time. Dangerous predators roam!
 
-[**Play _Puzzle Rain_ now!** `https://mozvr.com/puzzle-rain/`<br><br><img src="https://cloud.githubusercontent.com/assets/203725/18859336/f330d662-8427-11e6-9f14-4520f12f5cc6.png" alt="Puzzle Rain poster" title="Puzzle Rain poster" width="100%">](https://mozvr.com/puzzle-rain/)
+[**Play _Puzzle Rain_ now!** `https://mozvr.com/puzzle-rain/`<br>
+[Watch on Youtube](https://www.youtube.com/watch?v=XOIDXXynmq8)<br>
+<br><img src="https://cloud.githubusercontent.com/assets/203725/18859336/f330d662-8427-11e6-9f14-4520f12f5cc6.png" alt="Puzzle Rain poster" title="Puzzle Rain poster" width="100%">](https://mozvr.com/puzzle-rain/)
+
+
 
 To play _Puzzle Rain_, you will need a [VR-capable Windows PC](https://www.vive.com/us/ready/) with an [HTC Vive headset](https://www.vive.com/) running the latest [experimental Chromium VR builds](https://webvr.info/get-chrome/) (full HTC Vive support is [coming to Firefox soon](https://iswebvrready.org/#htc-vive-support)!). Follow [these instructions](https://github.com/Web-VR/iswebvrready/wiki/Instructions%3A-Chromium-for-HTC-Vive-on-Windows) to get set up.
 
