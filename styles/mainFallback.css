@@ -1,106 +1,98 @@
-@font-face {
-  font-family:'FiraSans';
-  src:url('fonts/fira/eot/FiraSans-Thin.eot');
-  src:url('fonts/fira/eot/FiraSans-Thin.eot?#iefix') format('embedded-opentype'),
-      url('fonts/fira/woff/FiraSans-Thin.woff') format('woff'),
-      url('fonts/fira/ttf/FiraSans-Thin.ttf') format('truetype');
-      font-weight:normal;
-      font-style:normal
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  font-size: 14px;
 }
 
 body {
-  background-color: #121114;
   color: #ccc;
-  font-family: FiraSans,Helvetica;
-  margin: 0px;
+  font: 14px/1.3 -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
+    Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-size: 14px;
+  position: relative;
 }
 
 a {
   color: #ccc;
-  font-weight: bold;
 }
 
 a:hover {
   text-decoration: none;
 }
 
-#fallback {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  overflow-x: hidden;
-  height: 100%;
-  position: absolute;
-  background: url(../images/bgFallback.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+.fallback-doc {
+  background: url(../images/bgFallback.jpg) 50% 100% fixed no-repeat;
   background-size: cover;
+  padding: 2vw 0;
 }
 
-#fallbackHeader {
-  width: 500px;
-  height: 116px;
-  margin: 0 auto;
-  padding: 30px;
-}
-
-#logoExperience {
-  width: 500px;
+.logoExperience {
+  background: url(../images/logoExperienceOnly.png) 50% no-repeat;
+  background-size: contain;
   height: 80px;
-  background: url(../images/logoExperienceOnly.png) no-repeat;
-  background-size: 100%;
   text-indent: -9999px;
 }
 
-#logoMozillaVR a {
-  width: 168px;
-  height: 36px;
-  background: url(../images/logoMozillaVR.png) no-repeat;
-  background-size: 100%;
-  text-indent: -9999px;
-  float: right;
+.logoMozillaVR a {
+  background: url(../images/logoMozillaVR.png) 50% no-repeat;
+  background-size: contain;
   cursor: pointer;
+  display: block;
+  height: 36px;
+  text-indent: -9999px;
 }
 
-.responsive-container {
-	position: relative;
-  height: 360px;
-	overflow: hidden;
-  margin: 0 auto;
-}
-.responsive-container,
-	.responsive-container iframe {
-	max-width: 640px;
-	max-height: 360px;
-}
-.responsive-container iframe {
-	position: absolute;
-	top: 0; left: 0;
-	width: 100%;
-	height: 100%;
-}
-
-#fallbackFooter {
-  position: absolute;
-  bottom: 10px;
+.iframe {
+  border: 0;
+  display: block;
+  height: 100%;
   width: 100%;
 }
 
-#alert {
-    width: 620px;
-    font-size: 16px;
-    text-align: center;
-    margin: 0 auto;
-    margin-bottom: 30px;
-    padding: 10px;
-    background: rgba(200, 54, 54, 0.5);
+.iframe-video {
+  min-height: 32vw;
+  margin: 0 auto;
+  max-height: 72vw;
+  max-width: 72vw;
 }
 
-#readMore {
-  margin: 15px;
-  font-size: 36px;
+.fallback-footer {
+  bottom: 10px;
+  position: absolute;
+  width: 100%;
+}
+
+.alert-learn {
+  background: rgba(200, 54, 54, 0.5);
+  font-size: 1rem;
+  margin: 0 auto 1rem;
+}
+
+.wrap {
+  margin: 0 auto;
+  min-width: 300px;
+  max-width: 620px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.readMore {
+  font-size: 2rem;
+  padding-top: .5rem;
   text-align: center;
 }
 
@@ -113,47 +105,39 @@ a:hover {
   text-align: center;
 }
 
+@media (max-height: 759px) {
+  .wrap-video {
+    /*min-height: 130px;*/
+  }
+
+  .iframe-video {
+    /*max-height: 130px;*/
+    /*max-width: 230px;*/
+  }
+}
+
 @media (max-height: 760px), (max-width: 640px) {
-  #fallbackHeader {
-    width: 300px;
-    height: 77px;
-    margin: 0 auto;
-    padding: 20px;
-    padding-bottom: 40px;
-  }
-
-  #logoExperience {
-    width: 300px;
+  .logoExperience {
     height: 48px;
-    background: url(../images/logoExperienceOnly.png) no-repeat;
-    background-size: 100%;
-    text-indent: -9999px;
   }
 
-  #logoMozillaVR a {
-    width: 133px;
+  .logoMozillaVR a {
     height: 29px;
-    background: url(../images/logoMozillaVR.png) no-repeat;
-    background-size: 100%;
-    text-indent: -9999px;
-    float: right;
-    cursor: pointer;
   }
 
-  #alert {
+  .alert {
     font-size: 14px;
-      width: auto;
-      padding: 5px;
+    padding: 5px;
   }
 
-  #readMore {
-    margin: 10px;
+  .readMore {
     font-size: 24px;
+    margin: 10px;
   }
 
-  #fallbackFooter {
+  .fallback-footer {
+    bottom: 5px;
     font-size: 12px;
-    bottom:5px;
   }
 
   #soonAlert {
@@ -161,18 +145,8 @@ a:hover {
   }
 }
 
-@media (max-width: 640px) {
-  .responsive-container {
-    position: relative;
-    padding: 27%;
-    height: 0;
-    overflow: hidden;
-    margin: 0 auto;
-  }
-}
-
 @media (max-height: 490px), (min-width: 640px) and (max-height: 640px) {
-  #fallbackFooter {
+  .fallback-footer {
     display: none;
   }
 }

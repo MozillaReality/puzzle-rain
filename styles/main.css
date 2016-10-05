@@ -1,34 +1,48 @@
-@font-face {
-  font-family:'FiraSans';
-  src:url('fonts/fira/eot/FiraSans-Thin.eot');
-  src:url('fonts/fira/eot/FiraSans-Thin.eot?#iefix') format('embedded-opentype'),
-      url('fonts/fira/woff/FiraSans-Thin.woff') format('woff'),
-      url('fonts/fira/ttf/FiraSans-Thin.ttf') format('truetype');
-      font-weight:normal;
-      font-style:normal
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-size: 14px;
 }
 
 body {
   background-color: #121114;
   color: #ccc;
-  font-family: FiraSans,Helvetica;
-  line-height: 26px;
-  margin: 0px;
-  overflow: hidden;
+  font: 14px/1.2 -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
+    Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-size: 14px;
+  line-height: 26px;
+  overflow: hidden;
+}
+
+a,
+.button-splash,
+.border-splash {
+  transition: .1s all ease-in-out;
 }
 
 a {
   color: #ccc;
-  font-weight: bold;
 }
 
 a:hover {
+  color: #eee;
   text-decoration: none;
 }
 
-#container, #preloader {
-  box-sizing: border-box;
+#container,
+#preloader {
   height: 100%;
   left: 0;
   margin: 0;
@@ -38,84 +52,92 @@ a:hover {
 }
 
 #launch {
+  background: url(../images/bg.jpg) no-repeat 50% fixed;
+  background-size: cover;
+  display: none;
   height: 100%;
+  margin: 0;
   overflow-x: hidden;
   padding: 0;
   position: absolute;
   width: 100%;
-  background: url(../images/bg.jpg) no-repeat 50% fixed;
-  background-size: cover;
-  display: none;
-  margin: 0;
   z-index: 30;
 }
 
 #launchHeader {
-  width: 500px;
   height: 116px;
   margin: 0 auto;
   padding: 30px;
+  width: 500px;
 }
 
 #logoExperience {
-  width: 500px;
-  height: 80px;
   background: url(../images/logoExperienceOnly.png) no-repeat;
   background-size: 100%;
+  height: 80px;
   text-indent: -9999px;
+  width: 500px;
 }
 
 #logoMozillaVR a {
-  width: 168px;
-  height: 36px;
   background: url(../images/logoMozillaVR.png) no-repeat;
   background-size: 100%;
-  text-indent: -9999px;
-  float: right;
   cursor: pointer;
+  float: right;
+  height: 36px;
+  text-indent: -9999px;
+  width: 168px;
 }
 
 #launchBody {
-  width: 100%;
   clear: both;
+  width: 100%;
 }
 
 #buttons {
-  width: 640px;
   margin: 0 auto;
+  width: 640px;
 }
 
 .buttonContainer {
+  cursor: pointer;
   display: inline-block;
-  width: 300px;
+  margin: 30px auto 15px;
+  max-width: 300px;
+  min-width: 280px;
   text-align: center;
-}
-
-.buttonContainer img {
-  width: 290px;
-  border: 1px solid rgba(255,255,255,0.25);
 }
 
 .buttonContainer + .buttonContainer {
   margin-left: 30px;
 }
 
+.button-fake,
 button {
   cursor: pointer;
   font-family: inherit;
 }
 
-.launch__body .button {
+a.buttonContainer,
+a.buttonContainer:hover {
+  text-decoration: none;
+}
+
+.button-splash {
   background: none;
   border: 0;
   display: block;
-  padding: 10px;
+  padding: 10px 0;
 }
 
-.button__inner {
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255,255,255,0.25);
-  box-shadow: 0 0 0 4px hsla(0, 0%, 50%, 0.15);
+.border-splash {
+  background: rgba(255,255,255,.1);
+  border: 1px solid rgba(255,255,255,.25);
+  box-shadow: 0 0 0 4px hsla(0,0%,50%,.15);
+  width: 100%;
+}
+
+.button-fake .border-splash {
   color: #ccc;
   display: inline-block;
   font-size: 24px;
@@ -125,37 +147,39 @@ button {
   top: -10px;
   left: -10px;
   margin: 10px 10px 0;
-  min-width: 280px;
   text-align: center;
 }
 
-.button:hover .button__inner {
-  background: rgba(255, 255, 255, 0.3);
-  box-shadow: 0 0 0 4px hsla(0, 0%, 50%, 0.3), 0 0 0 5px hsla(0, 0%, 90%, 0.05), inset 0 0 0 4px rgba(255, 255, 255, 0.15);
-  border-color: rgba(255,255,255,0.5);
+a:hover .border-splash {
+  background: rgba(255,255,255,.3);
+  box-shadow: 0 0 0 4px hsla(0,0%,50%,.3),
+    0 0 0 5px hsla(0,0%,90%,.05),
+    inset 0 0 0 4px rgba(255,255,255,.15);
+  border-color: rgba(255,255,255,.5);
   color: #fff;
 }
 
 .buttonAlert {
+  margin-top: -10px;
+  opacity: .75;
   text-align: center;
+}
+
+a:hover .buttonAlert {
+  opacity: 1;
 }
 
 #launchFooter {
-  position: absolute;
-  width: 100%;
   bottom: 10px;
   font-size: 16px;
+  position: absolute;
+  width: 100%;
 }
 
-#roomAlert {
-  text-align: center;
-}
-#soonAlert {
-  text-align: center;
-}
-
+#roomAlert,
+#soonAlert,
 #readMore {
-text-align: center;
+  text-align: center;
 }
 
 /*@media (max-height: 670px) {
@@ -164,258 +188,114 @@ text-align: center;
   }
 }*/
 
-@media (max-width: 720px) {
-  #launch{
-    background: url(../images/bgFallback.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+@media (max-width: 719px) {
+  #launch {
+    background: url(../images/bgFallback.jpg) no-repeat 50% fixed;
     background-size: cover;
   }
 
   #launchHeader {
-    width: 300px;
     height: 77px;
     margin: 0 auto;
-    padding: 20px;
-    padding-bottom: 40px;
+    padding: 20px 20px 40px;
+    width: 300px;
   }
 
   #logoExperience {
-    width: 300px;
-    height: 48px;
     background: url(../images/logoExperienceOnly.png) no-repeat;
     background-size: 100%;
+    height: 48px;
     text-indent: -9999px;
+    width: 300px;
   }
 
   #logoMozillaVR a {
-    width: 133px;
-    height: 29px;
     background: url(../images/logoMozillaVR.png) no-repeat;
     background-size: 100%;
-    text-indent: -9999px;
-    float: right;
     cursor: pointer;
+    float: right;
+    height: 29px;
+    text-indent: -9999px;
+    width: 133px;
   }
 
   #buttons {
-    width: 300px;
     margin: 0 auto;
+    width: 300px;
+  }
+
+  .buttonContainer {
+    float: left;
+    margin-bottom: 15px;
+    width: 300px;
+  }
+
+  .buttonContainer + .buttonContainer {
+    margin-left: 0;
   }
 
   .buttonContainer img {
     display: none;
   }
 
-  .buttonContainer + .buttonContainer {
-    margin-left: 0px;
-  }
-  .buttonContainer{
-    width: 300px;
-    float: left;
-    padding-bottom: 30px;
-  }
-
-
   #launchFooter {
     bottom: 5px;
     font-size: 11px;
   }
 
-  #roomAlert {
-    height: 20px;
-  }
+  #roomAlert,
   #soonAlert {
     height: 20px;
   }
 }
-/*Init Preloader styles*/
-@-webkit-keyframes uil-ring-anim {
-  0% {
-    -ms-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -ms-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes uil-ring-anim {
-  0% {
-    -ms-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -ms-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-@-moz-keyframes uil-ring-anim {
-  0% {
-    -ms-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -ms-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-@-ms-keyframes uil-ring-anim {
-  0% {
-    -ms-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -ms-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-@-moz-keyframes uil-ring-anim {
-  0% {
-    -ms-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -ms-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes uil-ring-anim {
-  0% {
-    -ms-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -ms-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-@-o-keyframes uil-ring-anim {
-  0% {
-    -ms-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -ms-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
+
+/* Begin preloader styles. */
 @keyframes uil-ring-anim {
   0% {
-    -ms-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    -ms-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
+
 .uil-ring-css {
   background: none;
+  height: 200px;
   position: relative;
   width: 200px;
-  height: 200px;
 }
 .uil-ring-css > div {
-  position: absolute;
-  display: block;
-  width: 160px;
-  height: 160px;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  margin-top: -80px;
-  margin-left: -80px;
+  animation: uil-ring-anim 1s linear infinite;
   border-radius: 80px;
   box-shadow: 0 6px 0 0 rgba(255,255,255,0.1);
-  -ms-animation: uil-ring-anim 1s linear infinite;
-  -moz-animation: uil-ring-anim 1s linear infinite;
-  -webkit-animation: uil-ring-anim 1s linear infinite;
-  -o-animation: uil-ring-anim 1s linear infinite;
-  animation: uil-ring-anim 1s linear infinite;
-}
-
-.hide {
-  display: none;
-
-  -o-transition-property: none !important;
-  -moz-transition-property: none !important;
-  -ms-transition-property: none !important;
-  -webkit-transition-property: none !important;
-  transition-property: none !important;
-
-  -o-transform: none !important;
-  -moz-transform: none !important;
-  -ms-transform: none !important;
-  -webkit-transform: none !important;
-  transform: none !important;
-
-  -webkit-animation: none !important;
-  -moz-animation: none !important;
-  -o-animation: none !important;
-  -ms-animation: none !important;
-  animation: none !important;
-}
-/*End Preloader styles*/
-
-#enterVR {
-  position: absolute;
-  width: 160px;
+  display: block;
   height: 160px;
-  top: 50%;
   left: 50%;
+  margin-left: -80px;
+  margin-top: -80px;
+  position: absolute;
+  position: fixed;
+  top: 50%;
+  width: 160px;
+}
+.hide {
+  animation: none !important;
+  display: none;
+  transform: none !important;
+  transition-property: none !important;
+}
+/* End preloader styles. */
+
+.enter-vr {
+  border-color: rgba(255,255,255,.5);
+  cursor: pointer;
   display: none;
   font-size: 24px;
-  border-color: rgba(255,255,255,0.5);
-  cursor: pointer;
+  height: 160px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  width: 160px;
   z-index: 100;
 }
