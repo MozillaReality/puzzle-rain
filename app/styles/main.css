@@ -26,11 +26,18 @@ body {
   overflow: hidden;
 }
 
+a,
+.button-splash,
+.border-splash {
+  transition: .1s all ease-in-out;
+}
+
 a {
   color: #ccc;
 }
 
 a:hover {
+  color: #eee;
   text-decoration: none;
 }
 
@@ -121,11 +128,6 @@ a.buttonContainer:hover {
   border: 0;
   display: block;
   padding: 10px 0;
-}
-
-.button-splash,
-.border-splash {
-  transition: .1s all ease-in-out;
 }
 
 .border-splash {
