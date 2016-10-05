@@ -107,7 +107,7 @@ a:hover {
   margin-top: .75rem;
 }
 
-.wrap-copy p a {
+.wrap-copy a {
   font-weight: 500;
 }
 
@@ -130,7 +130,11 @@ a:hover {
     margin: 2rem auto 2.25rem;
   }
 
-  .alert-learn br {
+  .wrap-copy br {
     display: none;
+  }
+
+  .wrap-copy-footer {
+    max-width: 80%;
   }
 }
