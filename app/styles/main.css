@@ -297,6 +297,7 @@ a:hover .buttonAlert,
 }
 
 .button-splash.button-enter-vr .border-splash {
+  position: static;
   padding: 0 4rem;
 }
 
