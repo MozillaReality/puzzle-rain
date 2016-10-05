@@ -72,12 +72,12 @@ a:hover {
 
 .video .wrap {
   position: relative;
-  min-height: 360px;
+  min-height: 200px;
 }
 
 .fallback-footer {
-  bottom: 10px;
-  position: absolute;
+  opacity: .7;
+  padding-bottom: 2vw;
   width: 100%;
 }
 
@@ -101,6 +101,10 @@ a:hover {
   font-size: 2rem;
   padding-top: .5rem;
   text-align: center;
+}
+
+.footer {
+  line-height: 1.5;
 }
 
 .footer p + p {
@@ -135,14 +139,13 @@ a:hover {
   }
 }
 
-@media (max-height: 690px) {
+@media (min-height: 690px) {
   .fallback-footer {
-    display: none;
+    display: block;
   }
 }
 
 @media (max-width: 639px) {
-  body {color:red !important;}
   .iframe-video {
     min-height: auto;
     height: 300px;
