@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Puzzle Rain by Mozilla VR - A WebVR room-scale experience for the HTC Vive</title>
+  <title>Puzzle Rain by Mozilla VR - A musical WebVR journey for the HTC Vive</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <link rel="stylesheet" href="styles/main.css">
   <meta name="theme-color" content="#121114">
@@ -14,54 +14,53 @@
   <meta property="og:site_name" content="Puzzle Rain">
   <meta property="og:type" content="game">
   <meta property="og:url" content="https://mozvr.com/puzzle-rain/">
-  <meta property="og:description" content="A WebVR room-scale experience for the HTC Vive. Brought to you by Mozilla VR.">
+  <meta property="og:description" content="A musical WebVR journey for the HTC Vive. Brought to you by Mozilla VR.">
   <meta property="og:image" content="https://mozvr.com/puzzle-rain/images/poster.png">
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@mozillavr">
   <meta name="twitter:creator" content="@mozillavr">
   <meta name="twitter:title" content="Puzzle Rain">
-  <meta name="twitter:description" content="A WebVR room-scale experience for the HTC Vive. Brought to you by Mozilla VR.">
+  <meta name="twitter:description" content="A musical WebVR journey for the HTC Vive. Brought to you by Mozilla VR.">
   <meta name="twitter:image" content="https://mozvr.com/puzzle-rain/images/poster.png">
 </head>
-<body>
+<body data-page-type="index">
   <div id="launch">
     <div id="launchHeader">
       <div id="logoExperience" title="Puzzle Rain">
         Puzzle Rain
       </div>
       <div id="logoMozillaVR">
-        <a href="http://mozvr.com" title="by Mozilla VR">by Mozilla VR</a>
+        <a href="https://mozvr.com/" title="by Mozilla VR">by Mozilla VR</a>
       </div>
     </div>
     <div id="launchBody" class="launch__body">
-      <div id="buttons">
+      <div id="buttons" class="mode-options">
         <a href="?mode=normal" class="buttonContainer button button-mode-normal" id="button-mode-normal">
           <img class="border-splash" src="images/normalThumb.gif" alt="Normal mode" title="Normal mode">
           <span class="button-fake button-splash"><span class="border-splash">Normal mode</span></span>
-          <div class="buttonAlert">(Recommended for minimum spec. PCs)</div>
+          <div class="buttonAlert dimmed">(Recommended for minimum spec. PCs)</div>
         </a>
         <a href="?mode=spectator" class="buttonContainer button button-mode-normal" id="button-mode-spectator">
           <img class="border-splash" src="images/spectatorThumb.gif" alt="Spectator mode" title="Spectator mode">
           <span class="button-fake button-splash"><span class="border-splash">Spectator mode</span></span>
-          <div class="buttonAlert">(Recommended for powerful PCs)</div>
+          <div class="buttonAlert dimmed">(Recommended for powerful PCs)</div>
         </a>
       </div>
     </div>
-    <div id="launchFooter">
-      <div id="roomAlert">
-        Puzzle Rain by <a href="https://mozvr.com/">Mozilla VR</a> is a WebVR experience for the HTC Vive.
+    <footer id="launchFooter" class="footer splash-footer">
+      <div id="roomAlert" class="wrap">
+        <p>A musical <a href="https://webvr.info/">WebVR</a> journey for the <a href="https://www.vive.com/">HTC Vive</a>.</p>
+        <p>Read our <a href="https://blog.mozvr.com/puzzle-rain/">blog post</a>.</p>
       </div>
-      <!-- <div id="soonAlert">
-        (Soon for Oculus Rift+Touch controllers &amp; Google Daydream.)
-      </div> -->
-      <div id="readMore">
-        Read about <a href="https://blog.mozvr.com/puzzle-rain/">Puzzle Rain</a>.
-      </div>
-    </div>
+    </footer>
   </div>
-  <div id="preloader" class='uil-ring-css' style='transform:scale(0.96);'><div></div></div>
-  <div id="enter-vr" class="enter-vr">Enter VR</div>
+  <div id="preloader" class="preloader"><div></div></div>
+  <div id="enter-vr" class="enter-vr hidden">
+    <button class="button button-fake button-splash button-enter-vr">
+      <span class="border-splash">Enter VR</span>
+    </button>
+  </div>
   <div id="container"></div>
   <!-- <script src="sw-register.js" async></script> -->
   <script src="js/index.js"></script>
