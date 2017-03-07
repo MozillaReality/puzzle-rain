@@ -53,7 +53,7 @@ self.addEventListener('fetch', function (event) {
         }
 
         console.log(' No response for %s found in cache. ' +
-          'About to fetch from network...', event.request.url);
+          'About to fetch from network ...', event.request.url);
 
         return fetch(event.request.clone()).then(function (response) {
           console.log('  Response for %s from network is: %O',

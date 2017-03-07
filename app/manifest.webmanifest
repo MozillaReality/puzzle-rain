@@ -1,0 +1,79 @@
+{
+  "lang": "en",
+  "dir": "ltr",
+  "name": "Puzzle Rain",
+  "short_name": "Puzzle Rain",
+  "description": "Puzzle Rain is a musical journey in which you help awaken and guide mythical creatures back together into happy musical harmony with one another.",
+  "start_url": "./?mode=normal&src=manifest",
+  "display": "fullscreen",
+  "theme_color": "#121114",
+  "background_color": "#121114",
+  "icons": [
+    {
+      "src": "/images/icon-1024.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "density": "2"
+    },
+    {
+      "src": "/images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "density": "2"
+    },
+    {
+      "src": "/images/icon-256.png",
+      "sizes": "256x256",
+      "type": "image/png",
+      "density": "2"
+    },
+    {
+      "src": "/images/icon-128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "density": "2"
+    },
+    {
+      "src": "/images/icon-64.png",
+      "sizes": "64x64",
+      "type": "image/png",
+      "density": "2"
+    },
+    {
+      "src": "/images/icon-32.png",
+      "sizes": "32x32",
+      "type": "image/png",
+      "density": "2"
+    },
+    {
+      "src": "/models/gltf/puzzle-rain.gltf",
+      "sizes": "any",
+      "type": "model/gltf+json"
+    },
+    {
+      "src": "/favicon.ico",
+      "sizes": "16x16 32x32 48x48 64x64 256x256 512x512 1024x1024 2048x2048",
+      "type": "image/x-icon"
+    }
+  ],
+  "vr_display_required": true,
+  "vr_default_display": "HTC Vive",
+  "vr_available_displays": [
+    "HTC Vive",
+    "Oculus Rift",
+    "Google Daydream",
+    "Samsung Gear VR",
+    "Google Cardboard"
+  ],
+  "vr_gamepad_required": true,
+  "vr_default_gamepad": "HTC Vive",
+  "vr_supported_gamepads": [
+    "HTC Vive",
+    "Oculus Touch"
+  ],
+  "vr_favicon": {
+    "src": "/models/gltf/puzzle-rain.gltf",
+    "sizes": "any",
+    "type": "model/gltf+json"
+  }
+}
