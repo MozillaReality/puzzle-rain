@@ -1,84 +1,73 @@
 <!DOCTYPE html>
 <html class="splash-doc" data-show-splash="false">
-  <head>
-    <meta charset="utf-8">
-    <title>Puzzle Rain by Mozilla VR - A musical WebVR journey for the HTC Vive and Oculus Rift</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#121114">
-    <link rel="stylesheet" href="styles/main.css">
-    <meta name="vrDisplaySource" content="#container canvas">
-    <meta name="vrDisplayRequired" content="true">
-    <meta name="vrDefaultDisplay" content="HTC Vive">
-    <meta name="vrAvailableDisplays" content="HTC Vive, Oculus Rift, Google Daydream, Samsung Gear VR, Google Cardboard">
-    <link rel="manifest" href="manifest.webmanifest">
-    <script async defer src="https://agent.webvr.rocks/client.js"></script>
+<head>
+  <meta charset="utf-8">
+  <title>Puzzle Rain by Mozilla VR - A musical WebVR journey for the HTC Vive</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <link rel="stylesheet" href="styles/main.css">
+  <meta name="theme-color" content="#121114">
+  <link rel="shortcut icon" href="https://mozvr.com/assets/img/icon-mozvr-fox-128.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <link rel="canonical" href="https://mozvr.com/puzzle-rain/">
 
-    <!-- TODO: Generate better badge icon from creature in glTF model. -->
-    <link rel="icon" sizes="256x256" href="/images/icon-128.png">
-    <link rel="gltf-model" type="model/gltf+json" href="/models/gltf/puzzle-rain.gltf">
-    <link rel="canonical" href="https://mozvr.com/puzzle-rain/">
+  <meta property="og:title" content="Puzzle Rain">
+  <meta property="og:site_name" content="Puzzle Rain">
+  <meta property="og:type" content="game">
+  <meta property="og:url" content="https://mozvr.com/puzzle-rain/">
+  <meta property="og:description" content="A musical WebVR journey for the HTC Vive. Brought to you by Mozilla VR.">
+  <meta property="og:image" content="https://mozvr.com/puzzle-rain/images/poster.png">
 
-    <meta property="og:title" content="Puzzle Rain">
-    <meta property="og:site_name" content="Puzzle Rain">
-    <meta property="og:type" content="game">
-    <meta property="og:url" content="https://mozvr.com/puzzle-rain/">
-    <meta property="og:description" content="A musical WebVR journey for the HTC Vive and Oculus Rift. Brought to you by Mozilla VR.">
-    <meta property="og:image" content="https://mozvr.com/puzzle-rain/images/poster.png">
-
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@mozillavr">
-    <meta name="twitter:creator" content="@mozillavr">
-    <meta name="twitter:title" content="Puzzle Rain">
-    <meta name="twitter:description" content="A musical WebVR journey for the HTC Vive and Oculus Rift. Brought to you by Mozilla VR.">
-    <meta name="twitter:image" content="https://mozvr.com/puzzle-rain/images/poster.png">
-
-    <!-- <script src="https://cdn.rawgit.com/GoogleChrome/pwacompat/v1.0.0/pwacompat.min.js" async defer></script> -->
-  </head>
-  <body data-page-type="index">
-    <div class="splash" id="launch">
-      <header class="header splash-header" id="splash-header">
-        <div class="wrap">
-          <div class="logoExperience" id="logoExperience">
-            Puzzle Rain
-          </div>
-          <div class="logoMozillaVR" id="logoMozillaVR">
-            <a href="https://mozvr.com">by Mozilla VR</a>
-          </div>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@mozillavr">
+  <meta name="twitter:creator" content="@mozillavr">
+  <meta name="twitter:title" content="Puzzle Rain">
+  <meta name="twitter:description" content="A musical WebVR journey for the HTC Vive. Brought to you by Mozilla VR.">
+  <meta name="twitter:image" content="https://mozvr.com/puzzle-rain/images/poster.png">
+</head>
+<body data-page-type="index">
+  <div class="splash" id="launch">
+    <header class="header splash-header" id="splash-header">
+      <div class="wrap">
+        <div class="logoExperience" id="logoExperience">
+          Puzzle Rain
         </div>
-        <div class="alert alert-learn" id="alert">
-          <div class="wrap wrap-copy">
-            <p>
-              A musical <a href="https://webvr.info/">WebVR</a> journey for the <a href="https://www.vive.com/">HTC Vive</a> and <a href="https://www.oculus.com/rift/">Oculus Rift</a>.
-              <br>
-              <a href="https://blog.mozvr.com/puzzle-rain/" class="blog-link">Read our blog post!</a>
-            </p>
-          </div>
-        </div>
-      </header>
-      <div id="launchBody" class="launch-body">
-        <div id="buttons" class="mode-options c">
-          <a href="?mode=normal" class="buttonContainer button button-mode-normal" id="button-mode-normal">
-            <img class="border-splash" src="images/normalThumb.gif" alt="Normal mode" title="Normal mode">
-            <span class="button-fake button-splash"><span class="border-splash">Normal mode</span></span>
-            <div class="buttonAlert dimmed">(Recommended for minimum spec. PCs)</div>
-          </a>
-          <a href="?mode=spectator" class="buttonContainer button button-mode-normal" id="button-mode-spectator">
-            <img class="border-splash" src="images/spectatorThumb.gif" alt="Spectator mode" title="Spectator mode">
-            <span class="button-fake button-splash"><span class="border-splash">Spectator mode</span></span>
-            <div class="buttonAlert dimmed">(Recommended for powerful PCs)</div>
-          </a>
+        <div class="logoMozillaVR" id="logoMozillaVR">
+          <a href="https://mozvr.com">by Mozilla VR</a>
         </div>
       </div>
+      <div class="alert alert-learn" id="alert">
+        <div class="wrap wrap-copy">
+          <p>
+            A musical <a href="https://webvr.info/">WebVR</a> journey for the <a href="https://www.vive.com/">HTC Vive</a>.
+            <br>
+            <a href="https://blog.mozvr.com/puzzle-rain/" class="blog-link">Read our blog post!</a>
+          </p>
+        </div>
+      </div>
+    </header>
+    <div id="launchBody" class="launch-body">
+      <div id="buttons" class="mode-options c">
+        <a href="?mode=normal" class="buttonContainer button button-mode-normal" id="button-mode-normal">
+          <img class="border-splash" src="images/normalThumb.gif" alt="Normal mode" title="Normal mode">
+          <span class="button-fake button-splash"><span class="border-splash">Normal mode</span></span>
+          <div class="buttonAlert dimmed">(Recommended for minimum spec. PCs)</div>
+        </a>
+        <a href="?mode=spectator" class="buttonContainer button button-mode-normal" id="button-mode-spectator">
+          <img class="border-splash" src="images/spectatorThumb.gif" alt="Spectator mode" title="Spectator mode">
+          <span class="button-fake button-splash"><span class="border-splash">Spectator mode</span></span>
+          <div class="buttonAlert dimmed">(Recommended for powerful PCs)</div>
+        </a>
+      </div>
     </div>
-    <div id="preloader" class="preloader"><div></div></div>
-    <div id="enter-vr" class="enter-vr hidden">
-      <button class="button button-fake button-splash button-enter-vr">
-        <span class="border-splash">Enter VR</span>
-      </button>
-    </div>
-    <div id="container" class="container"></div>
-    <!-- <script src="sw-register.js" async></script> -->
-    <script src="js/index.js"></script>
-  </body>
+  </div>
+  <div id="preloader" class="preloader"><div></div></div>
+  <div id="enter-vr" class="enter-vr hidden">
+    <button class="button button-fake button-splash button-enter-vr">
+      <span class="border-splash">Enter VR</span>
+    </button>
+  </div>
+  <div id="container" class="container"></div>
+  <!-- <script src="sw-register.js" async></script> -->
+  <script src="js/index.js"></script>
+</body>
 </html>
