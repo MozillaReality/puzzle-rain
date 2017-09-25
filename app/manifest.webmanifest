@@ -28,12 +28,12 @@
   ],
   "screenshots": [
     {
-      "src": "assets/normalThumb.gif",
+      "src": "images/normalThumb.gif",
       "sizes": "319x176",
       "type": "image/gif"
     },
     {
-      "src": "assets/spectatorThumb.gif",
+      "src": "images/spectatorThumb.gif",
       "sizes": "319x176",
       "type": "image/gif"
     }
