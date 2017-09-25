@@ -1,0 +1,58 @@
+{
+  "lang": "en",
+  "dir": "ltr",
+  "name": "Puzzle Rain",
+  "short_name": "Puzzle Rain",
+  "description": "Save the world from the cutest creatures in the Universe!",
+  "start_url": "./?src=manifest",
+  "scope": "./",
+  "display": "fullscreen",
+  "theme_color": "#121114",
+  "background_color": "#121114",
+  "icons": [
+    {
+      "src": "images/icon-320.png",
+      "sizes": "320x320",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icon-256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "favicon.ico",
+      "sizes": "16x16 32x32 48x48 64x64 256x256",
+      "type": "image/x-icon"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "assets/normalThumb.gif",
+      "sizes": "319x176",
+      "type": "image/gif"
+    },
+    {
+      "src": "assets/spectatorThumb.gif",
+      "sizes": "319x176",
+      "type": "image/gif"
+    }
+  ],
+  "about_url": "https://blog.mozvr.com/puzzle-rain/",
+  "vr_default_display": "HTC Vive",
+  "vr_available_displays": [
+    "HTC Vive"
+  ],
+  "vr_available_platforms": [
+    {
+      "browser": "Chromium",
+      "platform": "Windows",
+      "headset": "HTC Vive"
+    },
+    {
+      "browser": "Firefox",
+      "platform": "Windows",
+      "headset": "HTC Vive"
+    }
+  ]
+}
