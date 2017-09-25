@@ -1,11 +1,13 @@
 {
   "name": "puzzle-rain",
   "version": "1.0.0",
-  "description": "A room-scale WebVR puzzle game for the HTC Vive.",
+  "description": "A room-scale WebVR musical experience.",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mozvr/puzzle-rain.git"
   },
+  "authors": "Puzzle Rain authors",
+  "license": "MIT",
   "main": "lib/index.js",
   "dependencies": {
     "browserify": "^13.0.0",
