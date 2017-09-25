@@ -4,8 +4,8 @@ _Puzzle Rain_ is a musical journey in which you help awaken and guide mythical c
 
 [<img src="https://cloud.githubusercontent.com/assets/203725/18859336/f330d662-8427-11e6-9f14-4520f12f5cc6.png" alt="Puzzle Rain poster" title="Puzzle Rain poster" width="100%">](https://blog.mozvr.com/puzzle-rain/)
 
+* **[Play now!](https://mozvr.com/puzzle-rain/)**
 * [Read blog post](https://blog.mozvr.com/puzzle-rain/)
-* [Play now!](https://mozvr.com/puzzle-rain/)
 * [Watch video trailer](https://www.youtube.com/watch?v=XOIDXXynmq8)
 
 To play _Puzzle Rain_, you will need a [VR-capable Windows PC](https://www.vive.com/us/ready/) with a room-scale headset, the [HTC Vive headset](https://www.vive.com/) or an [Oculus Rift (with the Oculus Touch controllers)](https://www.oculus.com/rift/) running the latest [Firefox Nightly](https://webvr.rocks/firefox) or [experimental Chromium WebVR builds](https://webvr.rocks/chromium/). To get set up, follow [these instructions on WebVR Rocks](https://webvr.rocks/).
