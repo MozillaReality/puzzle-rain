@@ -38,6 +38,7 @@
       "type": "image/gif"
     }
   ],
+  "license": "MIT",
   "about_url": "https://blog.mozvr.com/puzzle-rain/",
   "vr_default_display": "HTC Vive",
   "vr_available_displays": [
