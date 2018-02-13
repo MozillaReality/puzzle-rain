@@ -4,7 +4,7 @@
   "description": "A room-scale WebVR musical experience.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mozvr/puzzle-rain.git"
+    "url": "git+https://github.com/MozillaReality/puzzle-rain.git"
   },
   "authors": "Puzzle Rain authors",
   "license": "MIT",
@@ -49,10 +49,5 @@
     "transform": [
       "glslify"
     ]
-  },
-  "authors": [
-    "Arturo Paracuellos <arturo@unboring.net>",
-    "Chris Van Wiemeersch <hearcomstreble@gmail.com>"
-  ],
-  "license": "MIT"
+  }
 }
