@@ -28,16 +28,17 @@
   ],
   "screenshots": [
     {
-      "src": "assets/normalThumb.gif",
+      "src": "images/normalThumb.gif",
       "sizes": "319x176",
       "type": "image/gif"
     },
     {
-      "src": "assets/spectatorThumb.gif",
+      "src": "images/spectatorThumb.gif",
       "sizes": "319x176",
       "type": "image/gif"
     }
   ],
+  "license": "MIT",
   "about_url": "https://blog.mozvr.com/puzzle-rain/",
   "vr_default_display": "HTC Vive",
   "vr_available_displays": [
