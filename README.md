@@ -1,6 +1,6 @@
 # [_Puzzle Rain_](https://vr.mozilla.org/puzzle-rain/)
 
-_Puzzle Rain_ is a musical journey in which you help awaken and guide mythical creatures back together into happy musical harmony with one another. Only their combined musical chorus can summon life-giving rain to revive the parched and desolate landscape. Though, there isn’t much time. Dangerous predators roam!
+[_Puzzle Rain_](https://vr.mozilla.org/puzzle-rain/) is a musical journey in which you help awaken and guide mythical creatures back together into happy musical harmony with one another. Only their combined musical chorus can summon life-giving rain to revive the parched and desolate landscape. Though, there isn’t much time. Dangerous predators roam!
 
 [<img src="https://cloud.githubusercontent.com/assets/203725/18859336/f330d662-8427-11e6-9f14-4520f12f5cc6.png" alt="Puzzle Rain poster" title="Puzzle Rain poster" width="100%">](https://blog.mozvr.com/puzzle-rain/)
 
@@ -20,10 +20,10 @@ git clone git@github.com:MozillaReality/puzzle-rain.git && cd puzzle-rain
 # Install the Node dependencies.
 npm install
 
-# Start the local dev server (http://localhost:9966/).
+# Start the local development server (http://localhost:9966/).
 npm start
 
-# Run the build system (generates Browserify JS bundle).
+# Run the build system (for the Browserify JavaScript bundle).
 npm run build
 ```
 
