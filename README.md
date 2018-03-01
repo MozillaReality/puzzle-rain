@@ -1,4 +1,4 @@
-# _Puzzle Rain_
+# [_Puzzle Rain_](https://vr.mozilla.org/puzzle-rain/)
 
 _Puzzle Rain_ is a musical journey in which you help awaken and guide mythical creatures back together into happy musical harmony with one another. Only their combined musical chorus can summon life-giving rain to revive the parched and desolate landscape. Though, there isn’t much time. Dangerous predators roam!
 
